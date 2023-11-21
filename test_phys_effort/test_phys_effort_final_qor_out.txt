@@ -1,0 +1,17 @@
+====
+1:3c
+    Generated on:           Nov 13 2023  09:55:27 pm
+2:3c
+    Generated on:           Nov 13 2023  09:54:24 pm
+3:3c
+    Generated on:           Nov 13 2023  09:53:23 pm
+====
+1:124,125c
+  Elapsed Runtime                    52 seconds
+  Genus peak memory usage            1619.07 
+2:124,125c
+  Elapsed Runtime                    52 seconds
+  Genus peak memory usage            1620.07 
+3:124,125c
+  Elapsed Runtime                    53 seconds
+  Genus peak memory usage            1620.02 

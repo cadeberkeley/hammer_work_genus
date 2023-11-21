@@ -1,0 +1,298 @@
+[
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][16]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][1]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][3]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][4]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][2]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][6]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][8]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][7]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][9]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][10]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][11]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][12]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][13]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][14]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][15]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][0]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][5]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][18]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][19]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][21]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][20]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][22]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][23]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][24]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][25]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][26]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][27]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][28]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][29]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][30]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][31]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/DATA_DX/DATA_REGFILE/\\mem_reg[0][17]",
+    "pin": "QN"
+  },
+  {
+    "path": "cpu/PC_GEN/\\next_pc_reg[13]",
+    "pin": "QN"
+  },
+  {
+    "path": "mem/dcache/memory_rw_ctr_reg[1]296",
+    "pin": "QN"
+  },
+  {
+    "path": "mem/dcache/memory_rw_ctr_reg[0]295",
+    "pin": "QN"
+  },
+  {
+    "path": "mem/dcache/\\state_reg[0]",
+    "pin": "QN"
+  },
+  {
+    "path": "mem/dcache/\\state_reg[1]",
+    "pin": "QN"
+  },
+  {
+    "path": "mem/dcache/\\state_reg[2]",
+    "pin": "QN"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[16]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[0]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[14]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[30]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[31]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[2]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[15]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[6]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[7]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[9]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[17]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[8]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[18]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[19]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[23]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[20]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[3]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[21]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[4]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[22]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[10]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[1]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[11]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[25]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[24]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[5]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[12]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[26]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[27]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[13]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[28]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[29]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/icache/memory_rw_ctr_reg[1]296",
+    "pin": "QN"
+  },
+  {
+    "path": "mem/icache/\\state_reg[1]",
+    "pin": "QN"
+  },
+  {
+    "path": "mem/icache/memory_rw_ctr_reg[0]295",
+    "pin": "QN"
+  },
+  {
+    "path": "mem/icache/\\state_reg[0]",
+    "pin": "QN"
+  }
+]

@@ -1,0 +1,36 @@
+# Post-Synthesis Simulation
+
+sim.inputs:
+  level: "syn"
+  input_files: ["src-asic-lab/ALU.v",
+  "src-asic-lab/ALUdec.v",
+  "src-asic-lab/Riscv151.v",
+  "src-asic-lab/Memory151.v",
+  "src-asic-lab/ExtMemModel.v",
+  "src-asic-lab/no_cache_mem.v",
+  "src-asic-lab/riscv_top.v",
+  "src-asic-lab/riscv_arbiter.v",
+  "src-asic-lab/ALUTestbench.v",
+  "src-asic-lab/ALUTestVectorTestbench.v",
+  "src-asic-lab/riscv_test_harness.v",
+  "src-asic-lab/Riscv151_testbench.v",
+  "src-asic-lab/EECS151.v",
+  "src-asic-lab/SRAM.v",
+  "src-asic-lab/BranchComp.v",
+  "src-asic-lab/CSR.v",
+  "src-asic-lab/ImmDec.v",
+  "src-asic-lab/ImmGen.v",
+  "src-asic-lab/mux_21.v",
+  "src-asic-lab/mux_41.v",
+  "src-asic-lab/Regfile.v",
+  "src-asic-lab/RiscvControl.v",
+  "src-asic-lab/BranchControl.v",
+  "src-asic-lab/HazardDetect.v",
+  "src-asic-lab/RiscvDataFetch.v",
+  "src-asic-lab/RiscvDataDX.v",
+  "src-asic-lab/RiscvDataMW.v",
+  "src-asic-lab/Cache.v",
+  "src-asic-lab/PCGen.v"]
+  input_files_meta: append
+  timing_annotated: true
+

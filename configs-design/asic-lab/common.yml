@@ -1,0 +1,54 @@
+# Generate Make include to aid in tlow
+vlsi.core.build_system: make
+
+vlsi.inputs.power_spec_type: "cpf"
+vlsi.inputs.power_spec_mode: "auto"
+
+synthesis.inputs:
+  top_module: "riscv_top"
+  
+  input_files: ["src-asic-lab/ALUdec.v",
+  "src-asic-lab/ALU.v",
+#  "src-asic-lab/no_cache_mem.v",
+  "src-asic-lab/Memory151.v",
+  "src-asic-lab/Riscv151.v",
+  "src-asic-lab/riscv_arbiter.v",
+  "src-asic-lab/riscv_top.v",
+ # Add more source files here if you need
+  "src-asic-lab/BranchComp.v",
+  "src-asic-lab/BranchControl.v",
+  "src-asic-lab/Cache.v",
+  "src-asic-lab/CSR.v",
+  "src-asic-lab/ImmDec.v",
+  "src-asic-lab/ImmGen.v",
+  "src-asic-lab/mux_21.v",
+  "src-asic-lab/mux_41.v",
+  "src-asic-lab/PCGen.v",
+  "src-asic-lab/Regfile.v",
+  "src-asic-lab/RiscvControl.v",
+  "src-asic-lab/BranchControl.v",
+  "src-asic-lab/HazardDetect.v",
+  "src-asic-lab/RiscvDataFetch.v",
+  "src-asic-lab/RiscvDataDX.v",
+  "src-asic-lab/RiscvDataMW.v",
+
+  "src-asic-lab/ALUop.vh",
+  "src-asic-lab/ImmCode.vh",
+  "src-asic-lab/const.vh",
+  "src-asic-lab/LoadOp.vh",
+  "src-asic-lab/Opcode.vh",
+  "src-asic-lab/StoreOp.vh",
+  "src-asic-lab/util.vh",
+
+  ]
+
+
+sim.inputs:
+  top_module: "riscv_top"
+  tb_name: "Riscv151_testbench"
+  tb_dut: "CPU"
+
+power.inputs:
+  top_module: "riscv_top"
+  tb_name: "Riscv151_testbench"
+  tb_dut: "CPU"

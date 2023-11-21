@@ -1,0 +1,39 @@
+[ PASSED ] /home/tmp/eecs151-afe/project/asm_output/addi.out   () after 576 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/add.out    () after 1035 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/andi.out   () after 477 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/and.out    () after 1225 simulation cycles
+  [ FAILED ] /home/tmp/eecs151-afe/project/asm_output/auipc.out  (tohost =          4) after 92 simulation cycles
+  [ FAILED ] /home/tmp/eecs151-afe/project/asm_output/beq.out    (timeout) after 10001 simulation cycles
+  [ FAILED ] /home/tmp/eecs151-afe/project/asm_output/bge.out    (timeout) after 10001 simulation cycles
+  [ FAILED ] /home/tmp/eecs151-afe/project/asm_output/bgeu.out   (timeout) after 10001 simulation cycles
+  [ FAILED ] /home/tmp/eecs151-afe/project/asm_output/blt.out    (timeout) after 10001 simulation cycles
+  [ FAILED ] /home/tmp/eecs151-afe/project/asm_output/bltu.out   (timeout) after 10001 simulation cycles
+  [ FAILED ] /home/tmp/eecs151-afe/project/asm_output/bne.out    (timeout) after 10001 simulation cycles
+  [ FAILED ] /home/tmp/eecs151-afe/project/asm_output/jal.out    (tohost =          6) after 104 simulation cycles
+  [ FAILED ] /home/tmp/eecs151-afe/project/asm_output/jalr.out   (tohost =          4) after 83 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/lb.out     () after 479 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/lbu.out    () after 479 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/lh.out     () after 511 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/lhu.out    () after 531 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/lui.out    () after 125 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/lw.out     () after 543 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/ori.out    () after 505 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/or.out     () after 1237 simulation cycles
+  [ FAILED ] /home/tmp/eecs151-afe/project/asm_output/sb.out     (tohost =         46) after 694 simulation cycles
+  [ FAILED ] /home/tmp/eecs151-afe/project/asm_output/sh.out     (tohost =         46) after 826 simulation cycles
+  [ FAILED ] /home/tmp/eecs151-afe/project/asm_output/simple.out         (timeout) after 10001 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/slli.out   () after 572 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/sll.out    () after 1107 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/slti.out   () after 556 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/sltiu.out  () after 556 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/slt.out    () after 1011 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/sltu.out   () after 1011 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/srai.out   () after 632 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/sra.out    () after 1173 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/srli.out   () after 608 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/srl.out    () after 1149 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/sub.out    () after 1013 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/sw.out     () after 846 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/xori.out   () after 513 simulation cycles
+  [ PASSED ] /home/tmp/eecs151-afe/project/asm_output/xor.out    () after 1233 simulation cycles
+  
