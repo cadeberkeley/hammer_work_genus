@@ -1,0 +1,202 @@
+
+#CPF power intent data
+set ::CPF::AOBufUseCpfPGSpec {0}
+set ::CPF::addDownShifterToTable {0}
+set ::CPF::addIsoToTable {0}
+set ::CPF::addUpShifterToTable {0}
+set ::CPF::alias_commands {source define_library_set define_ecsm_libraries create_analysis_view create_bias_net create_delay_corner create_nominal_condition update_nominal_condition create_operating_condition create_operating_corner create_mode_transition create_power_mode update_power_mode create_power_domain update_power_domain define_always_on_cell define_open_source_input_pin define_power_clamp_cell define_isolation_cell define_level_shifter_cell define_power_switch_cell define_state_retention_cell create_isolation_logic create_level_shifter_logic create_power_switch_logic create_state_retention_logic create_isolation_rule update_isolation_rules create_level_shifter_rule update_level_shifter_rules create_power_switch_rule update_power_switch_rule create_state_retention_rule update_state_retention_rules create_ground_nets create_power_nets create_global_connection create_power_ground_connection identify_always_on_driver identify_power_logic set_cpf_version set_design end_design set_top_design set_macro_model set_floating_ports set_input_voltage_tolerance set_wire_feedthrough_ports end_macro_model set_instance set_scope set_hierarchy_separator set_array_naming_style set_register_naming_style set_power_target set_power_unit set_time_unit set_switching_activity update_delay_corner create_assertion_control set_sim_control assert_illegal_domain_configurations set_power_mode_control_group end_power_mode_control_group get_parameter include identify_secondary_domain set_equivalent_control_pins update_mode_transition define_related_power_pins set_analog_ports set_power_source_reference_pin define_global_cell create_mode create_pad_rule set_diode_ports set_pad_ports define_pad_cell define_power_clamp_pins update_design find_design_objects}
+set ::CPF::allSNetVoltageSet {0}
+array set ::CPF::always_driver {}
+set ::CPF::always_on_libcells ""
+set ::CPF::analog_ports ""
+array set ::CPF::aoNets {clkSpec,cellAoPins {} aoDrv {} clkSpec,aoDrv {} swEnPtrs {} clkSpec,srpgEn {} cellAoPins {} swEnVio {} clkSpec,swEnVio {} pdBufList {} isoEn {} srpgEn {} clkSpec,isoEn {}}
+set ::CPF::applyDefaultGncRules {1}
+set ::CPF::array_naming {[%d]}
+set ::CPF::biasNets ""
+set ::CPF::cacheFunctionNet {1}
+set ::CPF::conflict_commands {create_analysis_view create_delay_corner update_delay_corner set_switching_activity}
+set ::CPF::cpfCommitted {17}
+set ::CPF::cpfLoaded {1}
+set ::CPF::cpfPrefix {CPF}
+set ::CPF::cpfTmp ""
+set ::CPF::cpf_action {1}
+set ::CPF::cpf_debug {0}
+set ::CPF::cpf_dirlist {./innovus/genus2invs_db/cmn/}
+set ::CPF::cpf_errcnt {0}
+set ::CPF::cpf_errmsg ""
+set ::CPF::cpf_file {${::IMEX::libVar}/cpf/riscv_top.cpf}
+set ::CPF::cpf_flow_library_loading_on {No}
+set ::CPF::cpf_incremental {1}
+array set ::CPF::cpf_inputs {0 {set_cpf_version 1.1
+} 1 {set_hierarchy_separator "/"
+} 2 {set_design riscv_top
+} 3 create_nominal_condition\ -name\ nominal\ \\\n\t\ -voltage\ \{\ 0.7\ \}\ \\\n\t\ -ground_voltage\ \{\ 0\ \}\n 4 create_power_domain\ -name\ AO\ \\\n\t\ -default\n 5 create_power_mode\ -name\ aon\ \\\n\t\ -default\ \\\n\t\ -domain_conditions\ \{\ AO@nominal\ \}\n 6 create_power_nets\ \\\n\t\ -nets\ \{\ VDD\ \}\ \\\n\t\ -voltage\ 0.7\n 7 create_ground_nets\ \\\n\t\ -nets\ \{\ VSS\ \}\n 8 update_power_domain\ -name\ AO\ \\\n\t\ -primary_power_net\ VDD\ \\\n\t\ -primary_ground_net\ VSS\n 9 create_global_connection\ \\\n\t\ -domain\ AO\ \\\n\t\ -net\ VDD\ \\\n\t\ -pins\ \{\ VDD\ \}\n 10 create_global_connection\ \\\n\t\ -domain\ AO\ \\\n\t\ -net\ VSS\ \\\n\t\ -pins\ \{\ VSS\ \}\n 11 {end_design
+}}
+set ::CPF::cpf_mmmc {0}
+set ::CPF::cpf_records ""
+set ::CPF::cpf_reinit {1}
+set ::CPF::cpf_user_env_vars ""
+set ::CPF::cpf_user_vars ""
+set ::CPF::cpf_version {1.1}
+set ::CPF::cpfscope_list { . }
+set ::CPF::cteShareDelayCorner {0}
+set ::CPF::current_cpfscope {.}
+set ::CPF::current_design {riscv_top}
+set ::CPF::current_fid {file37}
+set ::CPF::current_file ""
+set ::CPF::current_macro ""
+set ::CPF::current_scope {/}
+set ::CPF::dbgAllowShifterIn3rdPD {1}
+set ::CPF::defaultModeVoltage {0.7}
+set ::CPF::default_pd {AO}
+array set ::CPF::designs {riscv_top,-domains { AO} riscv_top,-ports {} riscv_top,AO,-default 1 riscv_top,design riscv_top}
+set ::CPF::domain_mapping_list ""
+set ::CPF::ecoLoad {0}
+set ::CPF::ecsm_lib ""
+set ::CPF::end_lineno {45}
+set ::CPF::evalMacroCommands {0}
+set ::CPF::exe_version {22.12-s080_1}
+set ::CPF::first_input {${::IMEX::libVar}/cpf/riscv_top.cpf}
+array set ::CPF::followpin {0x2b78115bd3e0 {{ } { } { } { } { } { } { } { }} 0x2b78115bd170 {{ } { } { } { } { } { } { } { }} 0x2b78115bc208 {{ } { } { } { } { } { } { } { }} 0x2b7811f792d0 {{ } { } { } { } { } { } { } { }} 0x2b7811f79060 {{ } { } { } { } { } { } { } { }} 0x2b780842e928 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b780842ec88 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b780842fa98 {{ } { } { } { } { } { } { } { }} 0x2b78115bd648 {{ } { } { } { } { } { } { } { }} 0x2b7811f78ec0 {{ } { } { } { } { } { } { } { }} 0x2b7811f78c50 {{ } { } { } { } { } { } { } { }} 0x2b780a0e8020 {{ } { } { } { } { } { } { } { }} 0x2b7810840ab8 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b780842e850 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b78115bd7e0 {{ } { } { } { } { } { } { } { }} 0x2b7811f797b0 {{ } { } { } { } { } { } { } { }} 0x2b7811f79540 {{ } { } { } { } { } { } { } { }} 0x2b7811f78020 {{ } { } { } { } { } { } { } { }} 0x2b78115bcaf8 {{ } { } { } { } { } { } { } { }} 0x2b7810840248 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b780842f348 {{ } { } { } { } { } { } { } { }} 0x2b780842f5b8 {{ } { } { } { } { } { } { } { }} 0x2b7810841db0 {{ } { } { } { } { } { } { } { }} 0x2b7810841b40 {{ } { } { } { } { } { } { } { }} 0x2b7811f78500 {{ } { } { } { } { } { } { } { }} 0x2b78115bcfd8 {{ } { } { } { } { } { } { } { }} 0x2b78115bcd68 {{ } { } { } { } { } { } { } { }} 0x2b780842efe8 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b780842f828 {{ } { } { } { } { } { } { } { }} 0x2b78108410a0 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b7810840020 {{ } { } { } { } { } { } { } { }} 0x2b78115bc3a8 {{ } { } { } { } { } { } { } { }} 0x2b78115bc138 {{ } { } { } { } { } { } { } { }} 0x2b7811f78df0 {{ } { } { } { } { } { } { } { }} 0x2b7811f78b80 {{ } { } { } { } { } { } { } { }} 0x2b780842e778 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b78115bd580 {{ } { } { } { } { } { } { } { }} 0x2b78115bc618 {{ } { } { } { } { } { } { } { }} 0x2b7810840e18 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b78108405a8 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b7811f796e0 {{ } { } { } { } { } { } { } { }} 0x2b7811f79470 {{ } { } { } { } { } { } { } { }} 0x2b7811f781c0 {{ } { } { } { } { } { } { } { }} 0x2b780842ea00 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b7810840d40 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b78108404d0 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b780842f278 {{ } { } { } { } { } { } { } { }} 0x2b780842f4e8 {{ } { } { } { } { } { } { } { }} 0x2b78115bd980 {{ } { } { } { } { } { } { } { }} 0x2b7810841ce0 {{ } { } { } { } { } { } { } { }} 0x2b7810841a70 {{ } { } { } { } { } { } { } { }} 0x2b7811f79950 {{ } { } { } { } { } { } { } { }} 0x2b7811f78430 {{ } { } { } { } { } { } { } { }} 0x2b7811f786a0 {{ } { } { } { } { } { } { } { }} 0x2b78115bcc98 {{ } { } { } { } { } { } { } { }} 0x2b780842f758 {{ } { } { } { } { } { } { } { }} 0x2b780842f9c8 {{ } { } { } { } { } { } { } { }} 0x2b78115bdb20 {{ } { } { } { } { } { } { } { }} 0x2b7810841f50 {{ } { } { } { } { } { } { } { }} 0x2b7811f78910 {{ } { } { } { } { } { } { } { }} 0x2b78115bdcb0 {{ } { } { } { } { } { } { } { }} 0x2b78115bc2d8 {{ } { } { } { } { } { } { } { }} 0x2b78115bc068 {{ } { } { } { } { } { } { } { }} 0x2b7810841320 {{ } { } { } { } { } { } { } { }} 0x2b78115bdf20 {{ } { } { } { } { } { } { } { }} 0x2b78115bc7b8 {{ } { } { } { } { } { } { } { }} 0x2b78115bc548 {{ } { } { } { } { } { } { } { }} 0x2b7811f780f0 {{ } { } { } { } { } { } { } { }} 0x2b7810841800 {{ } { } { } { } { } { } { } { }} 0x2b7810840c68 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b7810840908 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b78108403f8 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b7811f78f90 {{ } { } { } { } { } { } { } { }} 0x2b7810840b90 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b7810840830 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b7811f79880 {{ } { } { } { } { } { } { } { }} 0x2b7811f78360 {{ } { } { } { } { } { } { } { }} 0x2b7811f785d0 {{ } { } { } { } { } { } { } { }} 0x2b780842f688 {{ } { } { } { } { } { } { } { }} 0x2b780842f8f8 {{ } { } { } { } { } { } { } { }} 0x2b78115bda50 {{ } { } { } { } { } { } { } { }} 0x2b7810841e80 {{ } { } { } { } { } { } { } { }} 0x2b78108400f0 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b7811f79a20 {{ } { } { } { } { } { } { } { }} 0x2b7811f78840 {{ } { } { } { } { } { } { } { }} 0x2b78108414c0 {{ } { } { } { } { } { } { } { }} 0x2b7810841250 {{ } { } { } { } { } { } { } { }} 0x2b780842e020 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b7810840fc8 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b7811f79f00 {{ } { } { } { } { } { } { } { }} 0x2b78115bde50 {{ } { } { } { } { } { } { } { }} 0x2b78115bc6e8 {{ } { } { } { } { } { } { } { }} 0x2b78115bc478 {{ } { } { } { } { } { } { } { }} 0x2b780842ebb0 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b78108419a0 {{ } { } { } { } { } { } { } { }} 0x2b7810841730 {{ } { } { } { } { } { } { } { }} 0x2b7810840ef0 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b780842e418 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b780842fd08 {{ } { } { } { } { } { } { } { }} 0x2b7810840758 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b780842e338 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b78115bc958 {{ } { } { } { } { } { } { } { }} 0x2b780842e258 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b7811f78290 {{ } { } { } { } { } { } { } { }} 0x2b7810840680 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b78115bdbe8 {{ } { } { } { } { } { } { } { }} 0x2b780842e180 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b7811f79bc0 {{ } { } { } { } { } { } { } { }} 0x2b7811f789e0 {{ } { } { } { } { } { } { } { }} 0x2b7811f78770 {{ } { } { } { } { } { } { } { }} 0x2b78115bd0a0 {{ } { } { } { } { } { } { } { }} 0x2b7810841178 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b78108413f0 {{ } { } { } { } { } { } { } { }} 0x2b7811f79e30 {{ } { } { } { } { } { } { } { }} 0x2b780842ead8 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b78115bdd80 {{ } { } { } { } { } { } { } { }} 0x2b78115bd310 {{ } { } { } { } { } { } { } { }} 0x2b78108418d0 {{ } { } { } { } { } { } { } { }} 0x2b7810841660 {{ } { } { } { } { } { } { } { }} 0x2b7811f79200 {{ } { } { } { } { } { } { } { }} 0x2b780842e6a0 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b780842ef10 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b780842fc38 {{ } { } { } { } { } { } { } { }} 0x2b780842fea8 {{ } { } { } { } { } { } { } { }} 0x2b78108409e0 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b78115bc888 {{ } { } { } { } { } { } { } { }} 0x2b78115bd710 {{ } { } { } { } { } { } { } { }} 0x2b78115bca28 {{ } { } { } { } { } { } { } { }} 0x2b7811f79af0 {{ } { } { } { } { } { } { } { }} 0x2b78115bcf08 {{ } { } { } { } { } { } { } { }} 0x2b7811f79d60 {{ } { } { } { } { } { } { } { }} 0x2b7811f78ab0 {{ } { } { } { } { } { } { } { }} 0x2b78115bd4b0 {{ } { } { } { } { } { } { } { }} 0x2b78115bd240 {{ } { } { } { } { } { } { } { }} 0x2b780842e5c8 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b780842ee38 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b7810841590 {{ } { } { } { } { } { } { } { }} 0x2b7811f793a0 {{ } { } { } { } { } { } { } { }} 0x2b7811f79130 {{ } { } { } { } { } { } { } { }} 0x2b780842fb68 {{ } { } { } { } { } { } { } { }} 0x2b780842fdd8 {{ } { } { } { } { } { } { } { }} 0x2b7811f78d20 {{ } { } { } { } { } { } { } { }} 0x2b780842e4f0 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b780842ed60 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b780842f1a8 {{ } { } { } { } { } { } { } { }} 0x2b78115bd8b0 {{ } { } { } { } { } { } { } { }} 0x2b7811f79610 {{ } { } { } { } { } { } { } { }} 0x2b780842f0c8 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b78115bcbc8 {{ } { } { } { } { } { } { } { }} 0x2b780842f418 {{ } { } { } { } { } { } { } { }} 0x2b7810841c10 {{ } { } { } { } { } { } { } { }} 0x2b7810840320 {{  VDD } {  VSS } { } { } { } { } { } { }} 0x2b78115bce38 {{ } { } { } { } { } { } { } { }} 0x2b7811f79c90 {{ } { } { } { } { } { } { } { }}}
+array set ::CPF::gnd_nets {0,-nets VSS}
+array set ::CPF::gvoltageRange {AO,high 0 AO,low 0}
+set ::CPF::handleAssignForPowerMode {0}
+set ::CPF::handleLibStdCellRelatedPG {1}
+set ::CPF::handleNestedPDRows {1}
+set ::CPF::handleNetsExcludedFromAllRules {1}
+set ::CPF::handleNetsExcludedThroughBuffers {1}
+set ::CPF::hidden_commands { exit }
+set ::CPF::hierScript ""
+set ::CPF::hsc {/}
+set ::CPF::implicitRuleToIncludeExcludedPins {1}
+set ::CPF::inline_macro_models {1}
+set ::CPF::inst_list ""
+set ::CPF::internal_pgnet ""
+set ::CPF::isBackslashInNamesHidden {0}
+set ::CPF::isMinimalCPF {0}
+set ::CPF::isoEnPinNotAlwaysOn {0}
+set ::CPF::isoEnableNets ""
+set ::CPF::isoEnableNets_inFromDomain ""
+set ::CPF::isoLSNeededInitialized {1}
+set ::CPF::isolation_libcells ""
+set ::CPF::isoshifter_pgconn ""
+set ::CPF::keepGNC {0}
+set ::CPF::keepPDsPhyData {1}
+set ::CPF::keepRowsData {0}
+set ::CPF::level_shifter_libcells ""
+set ::CPF::lib_map ""
+set ::CPF::line_number {45}
+set ::CPF::lint_error {0}
+set ::CPF::load_errcnt {0}
+set ::CPF::matchExistingDelayCorner {0}
+set ::CPF::movedInsts ""
+set ::CPF::movedInsts2 ""
+set ::CPF::nmfFile ""
+set ::CPF::nmfLoaded {0}
+set ::CPF::noCpfPowerNetByInstPin {0}
+set ::CPF::noLibraryLoading {1}
+set ::CPF::noReorderDomainsWithinEachOther {1}
+set ::CPF::noTopEnb {1}
+array set ::CPF::nominal_condition {nominal,-name nominal nominal,-voltage 0.7 nominal,-ground_voltage 0}
+set ::CPF::numImplicitCPFRules {0}
+set ::CPF::num_always_cell {0}
+set ::CPF::num_always_driver {0}
+set ::CPF::num_bias_net {0}
+set ::CPF::num_clamp_cell {0}
+set ::CPF::num_commands {12}
+set ::CPF::num_cpf_commands {12}
+set ::CPF::num_cpf_inputs {12}
+set ::CPF::num_cpf_iso_cell {0}
+set ::CPF::num_cpf_shifter_cell {0}
+set ::CPF::num_domain_conn {0}
+set ::CPF::num_eq_ctrlpins {0}
+set ::CPF::num_globalAO_cell {0}
+set ::CPF::num_global_cell {0}
+set ::CPF::num_gnd_nets {1}
+set ::CPF::num_iso_cell {0}
+set ::CPF::num_iso_rule {0}
+set ::CPF::num_macro_models {0}
+set ::CPF::num_open_source {0}
+set ::CPF::num_pad_cell {0}
+set ::CPF::num_pad_rule {0}
+set ::CPF::num_pg_conn {2}
+set ::CPF::num_power_clamp_pin {0}
+set ::CPF::num_power_domain {1}
+set ::CPF::num_pso_cell {0}
+set ::CPF::num_pso_rule {0}
+set ::CPF::num_pwr_nets {1}
+set ::CPF::num_related_power_pins {0}
+set ::CPF::num_retention_cell {0}
+set ::CPF::num_retention_rule {0}
+set ::CPF::num_secondary_domain {0}
+set ::CPF::num_shifter_cell {0}
+set ::CPF::num_shifter_rule {0}
+set ::CPF::num_switch_act {0}
+set ::CPF::num_update_pd_primary_pg_net {1}
+set ::CPF::par_mapping_list ""
+array set ::CPF::pd_binding {AO,cell {{INVxp67_ASAP7_75t_SL 1} {INVxp33_ASAP7_75t_SL 1} {INVx8_ASAP7_75t_SL 1} {INVx6_ASAP7_75t_SL 1} {INVx5_ASAP7_75t_SL 1} {INVx4_ASAP7_75t_SL 1} {INVx3_ASAP7_75t_SL 1} {INVx2_ASAP7_75t_SL 1} {INVx1_ASAP7_75t_SL 1} {INVx13_ASAP7_75t_SL 1} {INVx11_ASAP7_75t_SL 1} {HB3xp67_ASAP7_75t_SL 1} {HB2xp67_ASAP7_75t_SL 1} {HB1xp67_ASAP7_75t_SL 1} {CKINVDCx9p33_ASAP7_75t_SL 1} {CKINVDCx8_ASAP7_75t_SL 1} {CKINVDCx6p67_ASAP7_75t_SL 1} {CKINVDCx5p33_ASAP7_75t_SL 1} {CKINVDCx20_ASAP7_75t_SL 1} {CKINVDCx16_ASAP7_75t_SL 1} {CKINVDCx14_ASAP7_75t_SL 1} {CKINVDCx12_ASAP7_75t_SL 1} {CKINVDCx11_ASAP7_75t_SL 1} {CKINVDCx10_ASAP7_75t_SL 1} {BUFx8_ASAP7_75t_SL 1} {BUFx6f_ASAP7_75t_SL 1} {BUFx5_ASAP7_75t_SL 1} {BUFx4f_ASAP7_75t_SL 1} {BUFx4_ASAP7_75t_SL 1} {BUFx3_ASAP7_75t_SL 1} {BUFx2_ASAP7_75t_SL 1} {BUFx24_ASAP7_75t_SL 1} {BUFx16f_ASAP7_75t_SL 1} {BUFx12f_ASAP7_75t_SL 1} {BUFx12_ASAP7_75t_SL 1} {BUFx10_ASAP7_75t_SL 1}} AO,tl {0x2b78108400f0 0x2b7810840248 0x2b7810840320 0x2b78108403f8 0x2b78108404d0 0x2b78108405a8 0x2b7810840680 0x2b7810840758 0x2b7810840830 0x2b7810840908 0x2b78108409e0 0x2b7810840ab8 0x2b7810840b90 0x2b7810840c68 0x2b7810840d40 0x2b7810840e18 0x2b7810840ef0 0x2b7810840fc8 0x2b78108410a0 0x2b7810841178 0x2b7810841250 0x2b7810841320 0x2b78108413f0 0x2b78108414c0 0x2b7810841590 0x2b7810841660 0x2b7810841730 0x2b7810841800 0x2b78108418d0 0x2b78108419a0 0x2b7810841a70 0x2b7810841b40 0x2b7810841c10 0x2b7810841ce0 0x2b7810841db0 0x2b7810841e80 0x2b7810841f50 0x2b78115bc068 0x2b78115bc138 0x2b78115bc208 0x2b78115bc2d8 0x2b78115bc3a8 0x2b78115bc478 0x2b78115bc548 0x2b78115bc618 0x2b78115bc6e8 0x2b78115bc7b8 0x2b78115bc888 0x2b78115bc958 0x2b78115bca28 0x2b78115bcaf8 0x2b78115bcbc8 0x2b78115bcc98 0x2b78115bcd68 0x2b78115bce38 0x2b78115bcf08 0x2b78115bcfd8 0x2b78115bd0a0 0x2b78115bd170 0x2b78115bd240 0x2b78115bd310 0x2b78115bd3e0 0x2b78115bd4b0 0x2b78115bd580 0x2b78115bd648 0x2b78115bd710 0x2b78115bd7e0 0x2b78115bd8b0 0x2b78115bd980 0x2b78115bda50 0x2b78115bdb20 0x2b78115bdbe8 0x2b78115bdcb0 0x2b78115bdd80 0x2b78115bde50 0x2b78115bdf20 0x2b780a0e8020} AO,PVT_0P77V_0C.hold_set 1}
+array set ::CPF::pd_intnets {AO,power VDD AO,ground VSS}
+set ::CPF::pd_list {AO}
+array set ::CPF::pd_pgconn {AO,power {  (VDD:VDD)} AO,ground {  (VSS:VSS)}}
+array set ::CPF::pd_pgspec {AO,power { (VDD:VDD)} AO,ground { (VSS:VSS)}}
+array set ::CPF::pgCmd {AO { -power {  (VDD:VDD)} -ground {  (VSS:VSS)}}}
+array set ::CPF::pg_conn {1,-pins VSS 0,-net VDD 1,-net VSS 0,-domain AO 1,-domain AO 0,-pins VDD}
+array set ::CPF::power_domain {AO,-internal_power_net VDD AO,instForIoPin / 0 AO AO,nom_cond nominal AO,hasHInst 1 AO,-internal_ground_net VSS AO,all_nom nominal AO,-name AO AO,-default 1 AO,all_libset {PVT_0P63V_100C.setup_set PVT_0P77V_0C.hold_set}}
+array set ::CPF::power_mode {aon,-name aon aon,-default 1 aon,-domain_conditions AO@nominal}
+set ::CPF::power_switch_libcells ""
+set ::CPF::power_unit {nW}
+set ::CPF::ptnCpfCellsFirst {1}
+array set ::CPF::pwr_nets {0,-nets VDD 0,-voltage 0.7}
+set ::CPF::recording_cpf {0}
+set ::CPF::redundantBiasNets ""
+set ::CPF::register_naming {_reg%s}
+set ::CPF::replacePDAssign {1}
+set ::CPF::resizeOnlyInsts ""
+set ::CPF::retention_libcells ""
+set ::CPF::scope_list { / }
+array set ::CPF::scopes {/,-merge_default 0 /,design riscv_top /,parent {} /,hsc / /,default_domain AO}
+set ::CPF::setRulePinsConstraint {0}
+set ::CPF::setupMmmcOnly {0}
+set ::CPF::shifterUseCpfPGSpec {0}
+set ::CPF::singlePD {1}
+set ::CPF::skipCheckGNC {0}
+set ::CPF::skipGNCTraceForAOB {0}
+set ::CPF::sorted_iso_rules ""
+set ::CPF::sorted_shifter_rules ""
+set ::CPF::srpgEnableNets ""
+set ::CPF::startCpuTime {42.870000}
+set ::CPF::startRealTime {46.000000}
+set ::CPF::start_lineno {45}
+set ::CPF::strictly_honor_create_global_connection {0}
+set ::CPF::supportHierCPF {false}
+set ::CPF::time_scale {1000000000.0}
+set ::CPF::time_unit {ns}
+set ::CPF::tracingHead ""
+set ::CPF::useFlatTopCPF {1}
+set ::CPF::useHierScript {0}
+set ::CPF::useMacroTopCPF {0}
+set ::CPF::usePowerDomainMinGapZero {0}
+set ::CPF::useViewDefLibSet {1}
+set ::CPF::use_slave_interp {0}
+set ::CPF::use_viewdef_data {1}
+array set ::CPF::voltageRange {AO,high 0.7 AO,low 0.7}
+set ::CPF::warnMissingCPFRules {1}
+::MSV::setSNetVoltageForView {VSS} PVT_0P63V_100C.setup_view 0
+::MSV::setSNetVoltageForView {VSS} PVT_0P77V_0C.hold_view 0
+::MSV::setSNetVoltageForView {VDD} PVT_0P63V_100C.setup_view 0.63
+::MSV::setSNetVoltageForView {VDD} PVT_0P77V_0C.hold_view 0.77
+if {$::rdagVersionName >= 16.12 || ($::rdagVersionName >= 15.25 && $::rdagVersionName < 16.0)} {
+}
+set ::CPF::allSNetVoltageSet 1
+
+
+
+namespace eval ::pd_physical_data {
+set pd_data {
+POWERDOMAIN: NAME=AO 
+	PRIM_POWER=VDD PRIM_GND=VSS LAYER=0 ISDEFAULT=1 EEQID=0 
+	ROWFLIP=3 SITE=asap7sc7p5t ROWSPACETYPE=2 ROWSPACING=0.0000 
+	MODULE=* POWER=(VDD:VDD) GND=(VSS:VSS) 
+END_PD
+}
+}

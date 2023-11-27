@@ -1,0 +1,746 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2023 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[18:48:48.046602] Configured Lic search path (21.01-s002): 5280@bwrcflex-1.eecs.berkeley.edu:5280@bwrcflex-2.eecs.berkeley.edu
+
+Version: 22.12-s082_1, built Sat May 06 18:39:19 PDT 2023
+Options: -files /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/syn.tcl -no_gui 
+Date:    Sun Nov 26 18:48:48 2023
+Host:    bwrcix-2.eecs.berkeley.edu (x86_64 w/Linux 3.10.0-1160.90.1.el7.x86_64) (32cores*128cpus*2physical cpus*Intel(R) Xeon(R) Gold 6338 CPU @ 2.00GHz 49152KB) (1650821376KB)
+PID:     84572
+OS:      Red Hat Enterprise Linux Server release 7.9 (Maipo)
+
+Checking out license: Genus_Synthesis
+[18:48:48.429459] Periodic Lic check successful
+[18:48:48.429467] Feature usage summary:
+[18:48:48.429467] Genus_Synthesis
+
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (0 seconds elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (12 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/syn.tcl
+#@ Begin verbose source /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/syn.tcl
+@file(syn.tcl) 8: puts "set_db hdl_error_on_blackbox true" 
+set_db hdl_error_on_blackbox true
+@file(syn.tcl) 9: set_db hdl_error_on_blackbox true
+  Setting attribute of root '/': 'hdl_error_on_blackbox' = true
+@file(syn.tcl) 10: puts "set_db max_cpus_per_server 1" 
+set_db max_cpus_per_server 1
+@file(syn.tcl) 11: set_db max_cpus_per_server 1
+  Setting attribute of root '/': 'max_cpus_per_server' = 1
+@file(syn.tcl) 12: puts "set_db lp_clock_gating_infer_enable  true" 
+set_db lp_clock_gating_infer_enable  true
+@file(syn.tcl) 13: set_db lp_clock_gating_infer_enable  true
+  Setting attribute of root '/': 'lp_clock_gating_infer_enable' = true
+@file(syn.tcl) 14: puts "set_db lp_clock_gating_prefix  {CLKGATE}" 
+set_db lp_clock_gating_prefix  {CLKGATE}
+@file(syn.tcl) 15: set_db lp_clock_gating_prefix  {CLKGATE}
+  Setting attribute of root '/': 'lp_clock_gating_prefix' = CLKGATE
+@file(syn.tcl) 16: puts "set_db lp_insert_clock_gating  true" 
+set_db lp_insert_clock_gating  true
+@file(syn.tcl) 17: set_db lp_insert_clock_gating  true
+  Setting attribute of root '/': 'lp_insert_clock_gating' = true
+@file(syn.tcl) 18: puts "set_db lp_clock_gating_register_aware true" 
+set_db lp_clock_gating_register_aware true
+@file(syn.tcl) 19: set_db lp_clock_gating_register_aware true
+  Setting attribute of root '/': 'lp_clock_gating_register_aware' = true
+@file(syn.tcl) 20: puts "read_mmmc /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/mmmc.tcl" 
+read_mmmc /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/mmmc.tcl
+@file(syn.tcl) 21: read_mmmc /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/mmmc.tcl
+  Setting attribute of root '/': 'is_read_mmmc_flow' = true
+Sourcing '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/mmmc.tcl' (Sun Nov 26 18:49:00 PST 2023)...
+#@ Begin verbose source /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/mmmc.tcl
+@file(mmmc.tcl) 8: puts "create_constraint_mode -name my_constraint_mode -sdc_files [list /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/clock_constraints_fragment.sdc /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc] " 
+create_constraint_mode -name my_constraint_mode -sdc_files /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/clock_constraints_fragment.sdc /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc 
+@file(mmmc.tcl) 9: create_constraint_mode -name my_constraint_mode -sdc_files [list /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/clock_constraints_fragment.sdc /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc] 
+@file(mmmc.tcl) 10: puts "create_library_set -name PVT_0P63V_100C.setup_set -timing [list /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_SRAM_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_RVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_LVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_SLVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_SRAM_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_RVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_LVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_SLVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_SRAM_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_RVT_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_LVT_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_SLVT_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_SRAM_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_RVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_LVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_SRAM_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x16_lib/SRAM1RW1024x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x17_lib/SRAM1RW1024x17_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x32_lib/SRAM1RW1024x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x37_lib/SRAM1RW1024x37_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x38_lib/SRAM1RW1024x38_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x44_lib/SRAM1RW1024x44_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x64_lib/SRAM1RW1024x64_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x8_lib/SRAM1RW1024x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW2048x8_lib/SRAM1RW2048x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x12_lib/SRAM1RW128x12_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x14_lib/SRAM1RW128x14_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x22_lib/SRAM1RW128x22_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x40_lib/SRAM1RW128x40_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x46_lib/SRAM1RW128x46_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x48_lib/SRAM1RW128x48_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x64_lib/SRAM1RW128x64_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x8_lib/SRAM1RW128x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x128_lib/SRAM1RW256x128_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x32_lib/SRAM1RW256x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x46_lib/SRAM1RW256x46_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x48_lib/SRAM1RW256x48_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x64_lib/SRAM1RW256x64_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x8_lib/SRAM1RW256x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW32x50_lib/SRAM1RW32x50_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW4096x16_lib/SRAM1RW4096x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW4096x8_lib/SRAM1RW4096x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x128_lib/SRAM1RW512x128_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x32_lib/SRAM1RW512x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x64_lib/SRAM1RW512x64_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x8_lib/SRAM1RW512x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x128_lib/SRAM1RW64x128_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x20_lib/SRAM1RW64x20_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x21_lib/SRAM1RW64x21_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x22_lib/SRAM1RW64x22_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x32_lib/SRAM1RW64x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x34_lib/SRAM1RW64x34_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x8_lib/SRAM1RW64x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x16_lib/SRAM2RW128x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x32_lib/SRAM2RW128x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x4_lib/SRAM2RW128x4_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x8_lib/SRAM2RW128x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x16_lib/SRAM2RW16x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x32_lib/SRAM2RW16x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x4_lib/SRAM2RW16x4_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x8_lib/SRAM2RW16x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x16_lib/SRAM2RW32x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x22_lib/SRAM2RW32x22_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x32_lib/SRAM2RW32x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x33_lib/SRAM2RW32x33_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x39_lib/SRAM2RW32x39_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x4_lib/SRAM2RW32x4_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x8_lib/SRAM2RW32x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x16_lib/SRAM2RW64x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x24_lib/SRAM2RW64x24_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x32_lib/SRAM2RW64x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x4_lib/SRAM2RW64x4_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x8_lib/SRAM2RW64x8_PVT_0P63V_100C.lib]" 
+create_library_set -name PVT_0P63V_100C.setup_set -timing /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_SRAM_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_RVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_LVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_SLVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_SRAM_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_RVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_LVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_SLVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_SRAM_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_RVT_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_LVT_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_SLVT_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_SRAM_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_RVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_LVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_SRAM_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x16_lib/SRAM1RW1024x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x17_lib/SRAM1RW1024x17_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x32_lib/SRAM1RW1024x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x37_lib/SRAM1RW1024x37_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x38_lib/SRAM1RW1024x38_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x44_lib/SRAM1RW1024x44_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x64_lib/SRAM1RW1024x64_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x8_lib/SRAM1RW1024x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW2048x8_lib/SRAM1RW2048x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x12_lib/SRAM1RW128x12_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x14_lib/SRAM1RW128x14_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x22_lib/SRAM1RW128x22_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x40_lib/SRAM1RW128x40_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x46_lib/SRAM1RW128x46_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x48_lib/SRAM1RW128x48_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x64_lib/SRAM1RW128x64_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x8_lib/SRAM1RW128x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x128_lib/SRAM1RW256x128_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x32_lib/SRAM1RW256x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x46_lib/SRAM1RW256x46_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x48_lib/SRAM1RW256x48_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x64_lib/SRAM1RW256x64_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x8_lib/SRAM1RW256x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW32x50_lib/SRAM1RW32x50_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW4096x16_lib/SRAM1RW4096x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW4096x8_lib/SRAM1RW4096x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x128_lib/SRAM1RW512x128_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x32_lib/SRAM1RW512x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x64_lib/SRAM1RW512x64_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x8_lib/SRAM1RW512x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x128_lib/SRAM1RW64x128_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x20_lib/SRAM1RW64x20_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x21_lib/SRAM1RW64x21_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x22_lib/SRAM1RW64x22_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x32_lib/SRAM1RW64x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x34_lib/SRAM1RW64x34_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x8_lib/SRAM1RW64x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x16_lib/SRAM2RW128x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x32_lib/SRAM2RW128x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x4_lib/SRAM2RW128x4_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x8_lib/SRAM2RW128x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x16_lib/SRAM2RW16x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x32_lib/SRAM2RW16x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x4_lib/SRAM2RW16x4_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x8_lib/SRAM2RW16x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x16_lib/SRAM2RW32x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x22_lib/SRAM2RW32x22_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x32_lib/SRAM2RW32x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x33_lib/SRAM2RW32x33_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x39_lib/SRAM2RW32x39_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x4_lib/SRAM2RW32x4_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x8_lib/SRAM2RW32x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x16_lib/SRAM2RW64x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x24_lib/SRAM2RW64x24_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x32_lib/SRAM2RW64x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x4_lib/SRAM2RW64x4_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x8_lib/SRAM2RW64x8_PVT_0P63V_100C.lib
+@file(mmmc.tcl) 11: create_library_set -name PVT_0P63V_100C.setup_set -timing [list /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_SRAM_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_RVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_LVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_SLVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_SRAM_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_RVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_LVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_SLVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_SRAM_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_RVT_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_LVT_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_SLVT_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_SRAM_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_RVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_LVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_SRAM_SS_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x16_lib/SRAM1RW1024x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x17_lib/SRAM1RW1024x17_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x32_lib/SRAM1RW1024x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x37_lib/SRAM1RW1024x37_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x38_lib/SRAM1RW1024x38_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x44_lib/SRAM1RW1024x44_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x64_lib/SRAM1RW1024x64_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x8_lib/SRAM1RW1024x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW2048x8_lib/SRAM1RW2048x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x12_lib/SRAM1RW128x12_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x14_lib/SRAM1RW128x14_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x22_lib/SRAM1RW128x22_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x40_lib/SRAM1RW128x40_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x46_lib/SRAM1RW128x46_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x48_lib/SRAM1RW128x48_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x64_lib/SRAM1RW128x64_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x8_lib/SRAM1RW128x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x128_lib/SRAM1RW256x128_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x32_lib/SRAM1RW256x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x46_lib/SRAM1RW256x46_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x48_lib/SRAM1RW256x48_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x64_lib/SRAM1RW256x64_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x8_lib/SRAM1RW256x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW32x50_lib/SRAM1RW32x50_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW4096x16_lib/SRAM1RW4096x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW4096x8_lib/SRAM1RW4096x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x128_lib/SRAM1RW512x128_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x32_lib/SRAM1RW512x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x64_lib/SRAM1RW512x64_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x8_lib/SRAM1RW512x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x128_lib/SRAM1RW64x128_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x20_lib/SRAM1RW64x20_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x21_lib/SRAM1RW64x21_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x22_lib/SRAM1RW64x22_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x32_lib/SRAM1RW64x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x34_lib/SRAM1RW64x34_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x8_lib/SRAM1RW64x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x16_lib/SRAM2RW128x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x32_lib/SRAM2RW128x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x4_lib/SRAM2RW128x4_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x8_lib/SRAM2RW128x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x16_lib/SRAM2RW16x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x32_lib/SRAM2RW16x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x4_lib/SRAM2RW16x4_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x8_lib/SRAM2RW16x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x16_lib/SRAM2RW32x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x22_lib/SRAM2RW32x22_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x32_lib/SRAM2RW32x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x33_lib/SRAM2RW32x33_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x39_lib/SRAM2RW32x39_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x4_lib/SRAM2RW32x4_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x8_lib/SRAM2RW32x8_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x16_lib/SRAM2RW64x16_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x24_lib/SRAM2RW64x24_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x32_lib/SRAM2RW64x32_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x4_lib/SRAM2RW64x4_PVT_0P63V_100C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x8_lib/SRAM2RW64x8_PVT_0P63V_100C.lib]
+@file(mmmc.tcl) 12: puts "create_timing_condition -name PVT_0P63V_100C.setup_cond -library_sets [list PVT_0P63V_100C.setup_set]" 
+create_timing_condition -name PVT_0P63V_100C.setup_cond -library_sets PVT_0P63V_100C.setup_set
+@file(mmmc.tcl) 13: create_timing_condition -name PVT_0P63V_100C.setup_cond -library_sets [list PVT_0P63V_100C.setup_set]
+@file(mmmc.tcl) 14: puts "create_rc_corner -name PVT_0P63V_100C.setup_rc -temperature 100.0 -qrc_tech /tools/B/asap7/asap7sc7p5t_27/qrc/qrcTechFile_typ03_scaled4xV06" 
+create_rc_corner -name PVT_0P63V_100C.setup_rc -temperature 100.0 -qrc_tech /tools/B/asap7/asap7sc7p5t_27/qrc/qrcTechFile_typ03_scaled4xV06
+@file(mmmc.tcl) 15: create_rc_corner -name PVT_0P63V_100C.setup_rc -temperature 100.0 -qrc_tech /tools/B/asap7/asap7sc7p5t_27/qrc/qrcTechFile_typ03_scaled4xV06
+@file(mmmc.tcl) 16: puts "create_delay_corner -name PVT_0P63V_100C.setup_delay -timing_condition PVT_0P63V_100C.setup_cond -rc_corner PVT_0P63V_100C.setup_rc" 
+create_delay_corner -name PVT_0P63V_100C.setup_delay -timing_condition PVT_0P63V_100C.setup_cond -rc_corner PVT_0P63V_100C.setup_rc
+@file(mmmc.tcl) 17: create_delay_corner -name PVT_0P63V_100C.setup_delay -timing_condition PVT_0P63V_100C.setup_cond -rc_corner PVT_0P63V_100C.setup_rc
+@file(mmmc.tcl) 18: puts "create_analysis_view -name PVT_0P63V_100C.setup_view -delay_corner PVT_0P63V_100C.setup_delay -constraint_mode my_constraint_mode" 
+create_analysis_view -name PVT_0P63V_100C.setup_view -delay_corner PVT_0P63V_100C.setup_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 19: create_analysis_view -name PVT_0P63V_100C.setup_view -delay_corner PVT_0P63V_100C.setup_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 20: puts "create_library_set -name PVT_0P77V_0C.hold_set -timing [list /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_LVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_SLVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_SRAM_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_LVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_SLVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_SRAM_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_LVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_SLVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_SRAM_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_LVT_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_SLVT_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_SRAM_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_LVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_SLVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_SRAM_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x16_lib/SRAM1RW1024x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x17_lib/SRAM1RW1024x17_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x32_lib/SRAM1RW1024x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x37_lib/SRAM1RW1024x37_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x38_lib/SRAM1RW1024x38_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x44_lib/SRAM1RW1024x44_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x64_lib/SRAM1RW1024x64_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x8_lib/SRAM1RW1024x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW2048x8_lib/SRAM1RW2048x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x12_lib/SRAM1RW128x12_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x14_lib/SRAM1RW128x14_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x22_lib/SRAM1RW128x22_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x40_lib/SRAM1RW128x40_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x46_lib/SRAM1RW128x46_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x48_lib/SRAM1RW128x48_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x64_lib/SRAM1RW128x64_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x8_lib/SRAM1RW128x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x128_lib/SRAM1RW256x128_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x32_lib/SRAM1RW256x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x46_lib/SRAM1RW256x46_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x48_lib/SRAM1RW256x48_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x64_lib/SRAM1RW256x64_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x8_lib/SRAM1RW256x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW32x50_lib/SRAM1RW32x50_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW4096x16_lib/SRAM1RW4096x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW4096x8_lib/SRAM1RW4096x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x128_lib/SRAM1RW512x128_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x32_lib/SRAM1RW512x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x64_lib/SRAM1RW512x64_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x8_lib/SRAM1RW512x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x128_lib/SRAM1RW64x128_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x20_lib/SRAM1RW64x20_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x21_lib/SRAM1RW64x21_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x22_lib/SRAM1RW64x22_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x32_lib/SRAM1RW64x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x34_lib/SRAM1RW64x34_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x8_lib/SRAM1RW64x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x16_lib/SRAM2RW128x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x32_lib/SRAM2RW128x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x4_lib/SRAM2RW128x4_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x8_lib/SRAM2RW128x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x16_lib/SRAM2RW16x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x32_lib/SRAM2RW16x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x4_lib/SRAM2RW16x4_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x8_lib/SRAM2RW16x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x16_lib/SRAM2RW32x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x22_lib/SRAM2RW32x22_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x32_lib/SRAM2RW32x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x33_lib/SRAM2RW32x33_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x39_lib/SRAM2RW32x39_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x4_lib/SRAM2RW32x4_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x8_lib/SRAM2RW32x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x16_lib/SRAM2RW64x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x24_lib/SRAM2RW64x24_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x32_lib/SRAM2RW64x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x4_lib/SRAM2RW64x4_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x8_lib/SRAM2RW64x8_PVT_0P77V_0C.lib]" 
+create_library_set -name PVT_0P77V_0C.hold_set -timing /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_LVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_SLVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_SRAM_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_LVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_SLVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_SRAM_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_LVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_SLVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_SRAM_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_LVT_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_SLVT_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_SRAM_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_LVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_SLVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_SRAM_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x16_lib/SRAM1RW1024x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x17_lib/SRAM1RW1024x17_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x32_lib/SRAM1RW1024x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x37_lib/SRAM1RW1024x37_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x38_lib/SRAM1RW1024x38_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x44_lib/SRAM1RW1024x44_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x64_lib/SRAM1RW1024x64_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x8_lib/SRAM1RW1024x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW2048x8_lib/SRAM1RW2048x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x12_lib/SRAM1RW128x12_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x14_lib/SRAM1RW128x14_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x22_lib/SRAM1RW128x22_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x40_lib/SRAM1RW128x40_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x46_lib/SRAM1RW128x46_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x48_lib/SRAM1RW128x48_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x64_lib/SRAM1RW128x64_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x8_lib/SRAM1RW128x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x128_lib/SRAM1RW256x128_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x32_lib/SRAM1RW256x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x46_lib/SRAM1RW256x46_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x48_lib/SRAM1RW256x48_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x64_lib/SRAM1RW256x64_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x8_lib/SRAM1RW256x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW32x50_lib/SRAM1RW32x50_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW4096x16_lib/SRAM1RW4096x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW4096x8_lib/SRAM1RW4096x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x128_lib/SRAM1RW512x128_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x32_lib/SRAM1RW512x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x64_lib/SRAM1RW512x64_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x8_lib/SRAM1RW512x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x128_lib/SRAM1RW64x128_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x20_lib/SRAM1RW64x20_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x21_lib/SRAM1RW64x21_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x22_lib/SRAM1RW64x22_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x32_lib/SRAM1RW64x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x34_lib/SRAM1RW64x34_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x8_lib/SRAM1RW64x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x16_lib/SRAM2RW128x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x32_lib/SRAM2RW128x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x4_lib/SRAM2RW128x4_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x8_lib/SRAM2RW128x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x16_lib/SRAM2RW16x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x32_lib/SRAM2RW16x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x4_lib/SRAM2RW16x4_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x8_lib/SRAM2RW16x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x16_lib/SRAM2RW32x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x22_lib/SRAM2RW32x22_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x32_lib/SRAM2RW32x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x33_lib/SRAM2RW32x33_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x39_lib/SRAM2RW32x39_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x4_lib/SRAM2RW32x4_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x8_lib/SRAM2RW32x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x16_lib/SRAM2RW64x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x24_lib/SRAM2RW64x24_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x32_lib/SRAM2RW64x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x4_lib/SRAM2RW64x4_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x8_lib/SRAM2RW64x8_PVT_0P77V_0C.lib
+@file(mmmc.tcl) 21: create_library_set -name PVT_0P77V_0C.hold_set -timing [list /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_LVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_SLVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_SIMPLE_SRAM_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_LVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_SLVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_AO_SRAM_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_LVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_SLVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_OA_SRAM_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_LVT_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_SLVT_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/tech-asap7-cache/LIB/NLDM/asap7sc7p5t_SEQ_SRAM_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_LVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_SLVT_FF_nldm_201020.lib.gz /tools/B/asap7/asap7sc7p5t_27/LIB/NLDM/asap7sc7p5t_INVBUF_SRAM_FF_nldm_201020.lib.gz /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x16_lib/SRAM1RW1024x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x17_lib/SRAM1RW1024x17_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x32_lib/SRAM1RW1024x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x37_lib/SRAM1RW1024x37_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x38_lib/SRAM1RW1024x38_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x44_lib/SRAM1RW1024x44_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x64_lib/SRAM1RW1024x64_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x8_lib/SRAM1RW1024x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW2048x8_lib/SRAM1RW2048x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x12_lib/SRAM1RW128x12_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x14_lib/SRAM1RW128x14_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x22_lib/SRAM1RW128x22_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x40_lib/SRAM1RW128x40_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x46_lib/SRAM1RW128x46_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x48_lib/SRAM1RW128x48_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x64_lib/SRAM1RW128x64_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x8_lib/SRAM1RW128x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x128_lib/SRAM1RW256x128_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x32_lib/SRAM1RW256x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x46_lib/SRAM1RW256x46_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x48_lib/SRAM1RW256x48_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x64_lib/SRAM1RW256x64_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x8_lib/SRAM1RW256x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW32x50_lib/SRAM1RW32x50_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW4096x16_lib/SRAM1RW4096x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW4096x8_lib/SRAM1RW4096x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x128_lib/SRAM1RW512x128_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x32_lib/SRAM1RW512x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x64_lib/SRAM1RW512x64_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW512x8_lib/SRAM1RW512x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x128_lib/SRAM1RW64x128_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x20_lib/SRAM1RW64x20_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x21_lib/SRAM1RW64x21_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x22_lib/SRAM1RW64x22_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x32_lib/SRAM1RW64x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x34_lib/SRAM1RW64x34_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW64x8_lib/SRAM1RW64x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x16_lib/SRAM2RW128x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x32_lib/SRAM2RW128x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x4_lib/SRAM2RW128x4_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW128x8_lib/SRAM2RW128x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x16_lib/SRAM2RW16x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x32_lib/SRAM2RW16x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x4_lib/SRAM2RW16x4_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW16x8_lib/SRAM2RW16x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x16_lib/SRAM2RW32x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x22_lib/SRAM2RW32x22_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x32_lib/SRAM2RW32x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x33_lib/SRAM2RW32x33_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x39_lib/SRAM2RW32x39_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x4_lib/SRAM2RW32x4_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW32x8_lib/SRAM2RW32x8_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x16_lib/SRAM2RW64x16_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x24_lib/SRAM2RW64x24_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x32_lib/SRAM2RW64x32_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x4_lib/SRAM2RW64x4_PVT_0P77V_0C.lib /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM2RW64x8_lib/SRAM2RW64x8_PVT_0P77V_0C.lib]
+@file(mmmc.tcl) 22: puts "create_timing_condition -name PVT_0P77V_0C.hold_cond -library_sets [list PVT_0P77V_0C.hold_set]" 
+create_timing_condition -name PVT_0P77V_0C.hold_cond -library_sets PVT_0P77V_0C.hold_set
+@file(mmmc.tcl) 23: create_timing_condition -name PVT_0P77V_0C.hold_cond -library_sets [list PVT_0P77V_0C.hold_set]
+@file(mmmc.tcl) 24: puts "create_rc_corner -name PVT_0P77V_0C.hold_rc -temperature 0.0 -qrc_tech /tools/B/asap7/asap7sc7p5t_27/qrc/qrcTechFile_typ03_scaled4xV06" 
+create_rc_corner -name PVT_0P77V_0C.hold_rc -temperature 0.0 -qrc_tech /tools/B/asap7/asap7sc7p5t_27/qrc/qrcTechFile_typ03_scaled4xV06
+@file(mmmc.tcl) 25: create_rc_corner -name PVT_0P77V_0C.hold_rc -temperature 0.0 -qrc_tech /tools/B/asap7/asap7sc7p5t_27/qrc/qrcTechFile_typ03_scaled4xV06
+@file(mmmc.tcl) 26: puts "create_delay_corner -name PVT_0P77V_0C.hold_delay -timing_condition PVT_0P77V_0C.hold_cond -rc_corner PVT_0P77V_0C.hold_rc" 
+create_delay_corner -name PVT_0P77V_0C.hold_delay -timing_condition PVT_0P77V_0C.hold_cond -rc_corner PVT_0P77V_0C.hold_rc
+@file(mmmc.tcl) 27: create_delay_corner -name PVT_0P77V_0C.hold_delay -timing_condition PVT_0P77V_0C.hold_cond -rc_corner PVT_0P77V_0C.hold_rc
+@file(mmmc.tcl) 28: puts "create_analysis_view -name PVT_0P77V_0C.hold_view -delay_corner PVT_0P77V_0C.hold_delay -constraint_mode my_constraint_mode" 
+create_analysis_view -name PVT_0P77V_0C.hold_view -delay_corner PVT_0P77V_0C.hold_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 29: create_analysis_view -name PVT_0P77V_0C.hold_view -delay_corner PVT_0P77V_0C.hold_delay -constraint_mode my_constraint_mode
+@file(mmmc.tcl) 30: puts "set_analysis_view -setup { PVT_0P63V_100C.setup_view } -hold { PVT_0P77V_0C.hold_view  }" 
+set_analysis_view -setup { PVT_0P63V_100C.setup_view } -hold { PVT_0P77V_0C.hold_view  }
+@file(mmmc.tcl) 31: set_analysis_view -setup { PVT_0P63V_100C.setup_view } -hold { PVT_0P77V_0C.hold_view  }
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW1024x16'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x16_lib/SRAM1RW1024x16_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW1024x17'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x17_lib/SRAM1RW1024x17_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW1024x32'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x32_lib/SRAM1RW1024x32_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW1024x37'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x37_lib/SRAM1RW1024x37_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW1024x38'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x38_lib/SRAM1RW1024x38_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW1024x44'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x44_lib/SRAM1RW1024x44_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW1024x64'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x64_lib/SRAM1RW1024x64_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW1024x8'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW1024x8_lib/SRAM1RW1024x8_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW2048x8'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW2048x8_lib/SRAM1RW2048x8_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW128x12'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x12_lib/SRAM1RW128x12_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW128x14'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x14_lib/SRAM1RW128x14_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW128x22'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x22_lib/SRAM1RW128x22_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW128x40'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x40_lib/SRAM1RW128x40_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW128x46'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x46_lib/SRAM1RW128x46_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW128x48'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x48_lib/SRAM1RW128x48_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW128x64'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x64_lib/SRAM1RW128x64_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW128x8'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW128x8_lib/SRAM1RW128x8_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW256x128'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x128_lib/SRAM1RW256x128_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW256x32'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x32_lib/SRAM1RW256x32_PVT_0P63V_100C.lib)
+Warning : Missing sequential block in the sequential cell. [LBR-526]
+        : Sequential block (ff/ff_bank/latch/latch_bank) missing in cell(s) 'SRAM1RW256x46'. This may cause potential problems with results of downstream tools (File /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lib/SRAM1RW256x46_lib/SRAM1RW256x46_PVT_0P63V_100C.lib)
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-526'.
+
+  Message Summary for Library all 77 libraries:
+  *********************************************
+  Missing sequential block in the sequential cell. [LBR-526]: 57
+  Missing threshold parameters. [LBR-519]: 57
+  Missing library level attribute. [LBR-516]: 513
+  *********************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020.lib.gz'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_SIMPLE_SRAM_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_AO_RVT_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_AO_LVT_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_AO_SLVT_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_AO_SRAM_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_OA_RVT_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_OA_LVT_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_OA_SLVT_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_OA_SRAM_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_SEQ_RVT_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_SEQ_LVT_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_SEQ_SLVT_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_SEQ_SRAM_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_INVBUF_RVT_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_INVBUF_LVT_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020.lib.gz'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.630000, 100.000000) in library 'asap7sc7p5t_INVBUF_SRAM_SS_nldm_201020.lib.gz'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-412'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW1024x16_PVT_0P63V_100C/SRAM1RW1024x16'.
+        : Specify a valid area value for the libcell.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW1024x17_PVT_0P63V_100C/SRAM1RW1024x17'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW1024x32_PVT_0P63V_100C/SRAM1RW1024x32'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW1024x37_PVT_0P63V_100C/SRAM1RW1024x37'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW1024x38_PVT_0P63V_100C/SRAM1RW1024x38'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW1024x44_PVT_0P63V_100C/SRAM1RW1024x44'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW1024x64_PVT_0P63V_100C/SRAM1RW1024x64'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW1024x8_PVT_0P63V_100C/SRAM1RW1024x8'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW128x12_PVT_0P63V_100C/SRAM1RW128x12'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW128x14_PVT_0P63V_100C/SRAM1RW128x14'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW128x22_PVT_0P63V_100C/SRAM1RW128x22'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW128x40_PVT_0P63V_100C/SRAM1RW128x40'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW128x46_PVT_0P63V_100C/SRAM1RW128x46'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW128x48_PVT_0P63V_100C/SRAM1RW128x48'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW128x64_PVT_0P63V_100C/SRAM1RW128x64'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW128x8_PVT_0P63V_100C/SRAM1RW128x8'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW2048x8_PVT_0P63V_100C/SRAM1RW2048x8'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW256x128_PVT_0P63V_100C/SRAM1RW256x128'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW256x32_PVT_0P63V_100C/SRAM1RW256x32'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'SRAM1RW256x46_PVT_0P63V_100C/SRAM1RW256x46'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-43'.
+Info    : Set default library domain. [LBR-109]
+        : The default library domain is 'library_domain:PVT_0P63V_100C.setup_cond'.
+#@ End verbose source /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/mmmc.tcl
+@file(syn.tcl) 22: puts "read_physical -lef { /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef /tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_R_4x_201211.lef /tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_L_4x_201211.lef /tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_SL_4x_201211.lef /tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_SRAM_4x_201211.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x17_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x37_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x38_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x44_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x64_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW2048x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x12_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x14_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x22_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x40_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x46_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x48_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x64_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x128_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x46_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x48_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x64_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW32x50_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW4096x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW4096x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW512x128_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW512x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW512x64_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW512x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x128_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x20_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x21_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x22_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x34_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW128x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW128x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW128x4_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW128x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW16x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW16x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW16x4_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW16x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x22_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x33_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x39_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x4_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x24_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x4_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x8_x4.lef }" 
+read_physical -lef { /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef /tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_R_4x_201211.lef /tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_L_4x_201211.lef /tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_SL_4x_201211.lef /tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_SRAM_4x_201211.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x17_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x37_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x38_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x44_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x64_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW2048x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x12_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x14_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x22_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x40_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x46_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x48_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x64_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x128_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x46_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x48_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x64_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW32x50_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW4096x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW4096x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW512x128_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW512x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW512x64_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW512x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x128_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x20_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x21_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x22_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x34_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW128x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW128x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW128x4_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW128x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW16x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW16x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW16x4_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW16x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x22_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x33_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x39_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x4_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x24_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x4_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x8_x4.lef }
+@file(syn.tcl) 23: read_physical -lef { /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef /tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_R_4x_201211.lef /tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_L_4x_201211.lef /tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_SL_4x_201211.lef /tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_SRAM_4x_201211.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x17_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x37_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x38_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x44_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x64_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW1024x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW2048x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x12_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x14_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x22_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x40_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x46_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x48_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x64_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW128x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x128_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x46_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x48_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x64_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW256x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW32x50_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW4096x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW4096x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW512x128_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW512x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW512x64_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW512x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x128_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x20_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x21_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x22_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x34_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM1RW64x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW128x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW128x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW128x4_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW128x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW16x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW16x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW16x4_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW16x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x22_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x33_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x39_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x4_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW32x8_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x16_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x24_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x32_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x4_x4.lef /bwrcq/scratch/caderichard/hammer/hammer/technology/asap7/sram_compiler/memories/lef/SRAM2RW64x8_x4.lef }
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA9Pad' has no resistance value.
+        : If this is the expected behavior, this message can be ignored.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA89' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA78' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA67' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA56' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA45' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA34' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA23' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'VIA12' has no resistance value.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'asap7sc7p5t' read already, this site in file '/tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_L_4x_201211.lef' is ignored.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'asap7sc7p5t' read already, this site in file '/tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_SL_4x_201211.lef' is ignored.
+Warning : Site already defined before, duplicated site will be ignored. [PHYS-106]
+        : Site 'asap7sc7p5t' read already, this site in file '/tools/B/asap7/asap7sc7p5t_27/LEF/scaled/asap7sc7p5t_27_SRAM_4x_201211.lef' is ignored.
+
+  According to lef_library, there are total 10 routing layers [ V(5) / H(5) ]
+
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M1' [line 100 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+        : Check the wire parameter in LEF technology files.
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M2' [line 165 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M3' [line 216 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M4' [line 296 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M5' [line 381 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M6' [line 462 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M7' [line 538 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M8' [line 566 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'M9' [line 593 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'EDGECAPACITANCE' parameter is missing for layer 'Pad' [line 617 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M1' [line 100 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M2' [line 165 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M3' [line 216 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M4' [line 296 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M5' [line 381 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M6' [line 462 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M7' [line 538 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M8' [line 566 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'M9' [line 593 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Missing wire parameter. [PHYS-15]
+        : 'CPERSQDIST' parameter is missing for layer 'Pad' [line 617 in file /tools/B/asap7/asap7sc7p5t_27/techlef_misc/asap7_tech_4x_201209.lef]
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-15'.
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.012, 0.16) of 'OFFSET' for layers 'M4' and 'Pad' is too large.
+        : Check the consistency of the parameters, and see if you can ignore this message or you're using different LEF file with wrong parameters.
+Warning : The value of the wire parameter is too small. [PHYS-14]
+        : The 'OFFSET: 0.012' of layer 'M4' is much less than others.
+        : Check the consistency of the specified wire parameter.
+Warning : The value of the wire parameter is too small. [PHYS-14]
+        : The 'OFFSET: 0.012' of layer 'M4' is much less than others.
+Warning : The value of the wire parameter is too small. [PHYS-14]
+        : The 'OFFSET: 0.012' of layer 'M4' is much less than others.
+Warning : The value of the wire parameter is too small. [PHYS-14]
+        : The 'OFFSET: 0.012' of layer 'M4' is much less than others.
+Warning : The value of the wire parameter is too small. [PHYS-14]
+        : The 'OFFSET: 0.012' of layer 'M4' is much less than others.
+Warning : The variant range of wire parameters is too large. An example of wire parameters are, a WIDTH for layer, PITCH for layer, MINSPACING for layers, etc. [PHYS-12]
+        : The variant range (0.072, 8) of 'MINSPACING' for layers 'M1' and 'Pad' is too large.
+Warning : The value of the wire parameter is too big. [PHYS-13]
+        : The 'MINSPACING: 8' of layer 'Pad' is much bigger than others.
+        : Check the consistency of the specified wire parameter.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DECAPx10_ASAP7_75t_R cannot be found in library.
+        : Ensure that the proper library files are available and have been imported.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DECAPx1_ASAP7_75t_R cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DECAPx2_ASAP7_75t_R cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DECAPx2b_ASAP7_75t_R cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DECAPx4_ASAP7_75t_R cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DECAPx6_ASAP7_75t_R cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILLER_ASAP7_75t_R cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILLERxp5_ASAP7_75t_R cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell TAPCELL_ASAP7_75t_R cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell TAPCELL_WITH_FILLER_ASAP7_75t_R cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DECAPx10_ASAP7_75t_L cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DECAPx1_ASAP7_75t_L cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DECAPx2_ASAP7_75t_L cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DECAPx2b_ASAP7_75t_L cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DECAPx4_ASAP7_75t_L cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell DECAPx6_ASAP7_75t_L cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILLER_ASAP7_75t_L cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell FILLERxp5_ASAP7_75t_L cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell TAPCELL_ASAP7_75t_L cannot be found in library.
+Warning : Physical cell not defined in library. [PHYS-279]
+        : The physical (LEF) cell TAPCELL_WITH_FILLER_ASAP7_75t_L cannot be found in library.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-279'.
+Info : Found 0 N2 inbound cells.
+@file(syn.tcl) 24: puts "set_db qrc_tech_file { /tools/B/asap7/asap7sc7p5t_27/qrc/qrcTechFile_typ03_scaled4xV06 }" 
+set_db qrc_tech_file { /tools/B/asap7/asap7sc7p5t_27/qrc/qrcTechFile_typ03_scaled4xV06 }
+@file(syn.tcl) 25: set_db qrc_tech_file { /tools/B/asap7/asap7sc7p5t_27/qrc/qrcTechFile_typ03_scaled4xV06 }
+
+  According to qrc_tech_file, there are total 10 routing layers [ V(5) / H(5) ]
+
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M1' in lef is '0.072', minimum width of layer 'LISD' in technology file is '0.1'.
+        : Compare the layer MinWidth of the cap_table_file with the MinWidth (WIDTH) of the corresponding layer in LEF. Set the attribute 'shrink_factor' to adjust the MinWidth layer value in the captable file
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M4' in lef is '0.096', minimum width of layer 'M3' in technology file is '0.072'.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M6' in lef is '0.128', minimum width of layer 'M5' in technology file is '0.096'.
+Warning : Minimum width of layer in LEF does not match minimum width of layer in cap table. [PHYS-25]
+        : After applying shrink factor, minimum width of layer 'M8' in lef is '0.16', minimum width of layer 'M7' in technology file is '0.128'.
+  Setting attribute of root '/': 'qrc_tech_file' = /tools/B/asap7/asap7sc7p5t_27/qrc/qrcTechFile_typ03_scaled4xV06
+@file(syn.tcl) 26: puts "read_hdl -sv { /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ALUdec.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ALU.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Memory151.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Riscv151.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/riscv_arbiter.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/riscv_top.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/BranchComp.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/BranchControl.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Cache.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/CSR.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ImmDec.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ImmGen.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/mux_21.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/mux_41.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/PCGen.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Regfile.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvControl.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/BranchControl.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/HazardDetect.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataFetch.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataDX.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataMW.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ALUop.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ImmCode.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/const.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/LoadOp.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Opcode.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/StoreOp.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/util.vh }" 
+read_hdl -sv { /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ALUdec.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ALU.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Memory151.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Riscv151.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/riscv_arbiter.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/riscv_top.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/BranchComp.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/BranchControl.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Cache.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/CSR.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ImmDec.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ImmGen.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/mux_21.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/mux_41.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/PCGen.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Regfile.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvControl.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/BranchControl.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/HazardDetect.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataFetch.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataDX.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataMW.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ALUop.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ImmCode.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/const.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/LoadOp.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Opcode.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/StoreOp.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/util.vh }
+@file(syn.tcl) 27: read_hdl -sv { /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ALUdec.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ALU.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Memory151.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Riscv151.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/riscv_arbiter.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/riscv_top.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/BranchComp.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/BranchControl.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Cache.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/CSR.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ImmDec.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ImmGen.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/mux_21.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/mux_41.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/PCGen.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Regfile.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvControl.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/BranchControl.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/HazardDetect.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataFetch.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataDX.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataMW.v /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ALUop.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ImmCode.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/const.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/LoadOp.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Opcode.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/StoreOp.vh /bwrcq/scratch/caderichard/hammer_work/src-asic-lab/util.vh }
+    .pc_sel(dx_branch_taken ? 1'b1 : dx_PCSel),
+                                     |
+Warning : Suspicious implicit wire declaration. [VLOGPT-21]
+        : Operand 'dx_PCSel' declared as a 1-bit wire in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Riscv151.v' on line 60, column 38.
+        : An implicit wire is declared for an undeclared symbol occurring within a module instance or within the target of an assign statement.  If an undeclared symbol occurs within a subexpression in one of these contexts, it may be a coding error.
+initial data_out = 32'b0;
+      |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/CSR.v' on line 14, column 7.
+        : For example, the following constructs will be ignored:
+    - initial block
+    - final block
+    - program block
+    - property block
+    - sequence block
+    - covergroup
+    - checker block
+    - gate drive strength
+    - system task enable
+    - reg declaration with initial value
+    - specify block.
+module BranchControl (
+                   |
+Warning : Replacing previously read Verilog description. [VLOGPT-6]
+        : Replacing Verilog description 'BranchControl' with Verilog module in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/BranchControl.v' on line 3, column 20.
+        : A Verilog description is replaced when a new description of the same name and same library is read again.
+    Verilog descriptions are:
+       module
+       macromodule
+       configuration
+    SystemVerilog adds the following descriptions:
+       interface
+       program
+       package.
+initial begin
+      |
+Warning : Ignoring unsynthesizable construct. [VLOGPT-37]
+        : Initial in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/HazardDetect.v' on line 40, column 7.
+    always @(*) #(1) f_inst_out = f_inst;
+                   |
+Warning : Ignoring unsynthesizable delay specifier (#<n>) mentioned in verilog file. These delay numbers are for simulation purpose only. [VLOGPT-35]
+        : in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataFetch.v' on line 37, column 20.
+        : All delay numbers assigned or used in behavioral code are for simulation purposes only and are not synthesizable. These values are ignored during synthesis. This warning is issued only once per module.
+@file(syn.tcl) 28: puts "elaborate riscv_top" 
+elaborate riscv_top
+@file(syn.tcl) 29: elaborate riscv_top
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'riscv_top' from file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/riscv_top.v'.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused latch register 'sram_cpu_web_1' in module 'cache' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Cache.v' on line 331.
+        : Genus removes the flip-flop or latch inferred for an unused signal or variable. To preserve the flip-flop or latch, set the hdl_preserve_unused_registers attribute to true or use a pragma in the RTL.
+Warning : Unreachable statements for case item. [CDFG-472]
+        : Case item 'default' in module 'ALUdec' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/ALUdec.v' on line 22.
+Warning : Port redeclared with different type or size. [CDFG-237]
+        : Type mismatch for port 'dx_store_mask' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataDX.v' on line 26.
+        : The type associated with the two declarations of a port should be identical.
+Warning : Input port connected to output instance port. [CDFG-562]
+        : Input port 'dcache_dout' connected to output port 'dcache_dout' of module 'RiscvDataDX' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Riscv151.v' on line 88.
+Warning : Removing unused register. [CDFG-508]
+        : Removing unused flip-flop register 'mw_rf_out_B' in module 'RiscvDataMW' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataMW.v' on line 58.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'mem_req_data_bits' in module 'cache' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Cache.v' on line 29, column 42, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'mem_req_data_mask' in module 'cache' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Cache.v' on line 31, column 42, hid = 0.
+Warning : Unconnected instance input port detected. [ELABUTL-124]
+        : Unconnected input port 'cpu_req_data' of instance 'icache' of module 'cache' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Memory151.v' on line 85, column 14, hid = 0.
+        : Run check_design to check 'Undriven Port(s)/Pin(s)' section for all unconnected instance input ports. It is better to double confirm with designer these unconnected instance input port are expected. During syn_gen the unconnected instance input ports are controlled by attribute 'hdl_unconnected_value', the default value is 0.
+Warning : Unconnected instance input port detected. [ELABUTL-124]
+        : Unconnected input port 'mem_req_data_ready' of instance 'icache' of module 'cache' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Memory151.v' on line 85, column 14, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'BrEq' of instance 'FETCH_CTRL' of module 'RiscvControl' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataFetch.v' on line 40, column 29, hid = 0.
+        : Run check_design to check 'Undriven Port(s)/Pin(s)' section for all undriven module input ports. It is better to double confirm with designer if these undriven ports are expected. During syn_gen the undriven ports are controlled by attribute 'hdl_unconnected_value', the default value is 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'BrLt' of instance 'FETCH_CTRL' of module 'RiscvControl' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataFetch.v' on line 40, column 29, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'write_addr' in module 'CSR' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/CSR.v' on line 11, column 29, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'BrEq' of instance 'MW_CTRL' of module 'RiscvControl' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataMW.v' on line 84, column 24, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'BrLt' of instance 'MW_CTRL' of module 'RiscvControl' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataMW.v' on line 84, column 24, hid = 0.
+Warning : Undriven module input port. [ELABUTL-127]
+        : Undriven bits of port 'rs1_val' of instance 'RISCV_CSR' of module 'CSR' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataMW.v' on line 194, column 17, hid = 0.
+Warning : Undriven module output port. [ELABUTL-123]
+        : Undriven bits of output port 'mw_stall' in module 'RiscvDataMW' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/RiscvDataMW.v' on line 15, column 22, hid = 0.
+Warning : Unconnected instance input port detected. [ELABUTL-124]
+        : Unconnected input port 'f_inst' of instance 'DATA_HAZARD' of module 'HazardDetect' in file '/bwrcq/scratch/caderichard/hammer_work/src-asic-lab/Riscv151.v' on line 168, column 26, hid = 0.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'memory_rw_ctr[0]' in module 'cache'.
+        : This may cause simulation mismatches between the original and synthesized designs.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'memory_rw_ctr[1]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'dirty_bits[0]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'dirty_bits[1]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'dirty_bits[2]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'dirty_bits[3]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'dirty_bits[4]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'dirty_bits[5]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'dirty_bits[6]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'dirty_bits[7]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'valid_bits[0]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'valid_bits[1]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'valid_bits[2]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'valid_bits[3]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'valid_bits[4]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'valid_bits[5]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'valid_bits[6]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'valid_bits[7]' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'cpu_req_ready' in module 'cache'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'cpu_resp_valid' in module 'cache'.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'CDFG2G-622'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'riscv_top'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+Running Unified Mux Engine Tricks...
+Completed Unified Mux Engine Tricks
+
+Stage: post_elab
+--------------------------------------------------------
+| Trick             | Accepts | Rejects | Runtime (ms) | 
+--------------------------------------------------------
+| ume_constant_bmux |       0 |       0 |         1.00 | 
+| ume_merge         |       0 |       0 |         0.00 | 
+| ume_ssm           |       0 |       0 |         1.00 | 
+| ume_cse           |       1 |       0 |        14.00 | 
+| ume_shrink        |       0 |       0 |         0.00 | 
+| ume_sweep         |       0 |       0 |         0.00 | 
+| ume_constant_bmux |       0 |       0 |         1.00 | 
+| ume_merge         |       0 |       0 |         0.00 | 
+| ume_ssm           |       0 |       0 |         0.00 | 
+| ume_cse           |       0 |       0 |         8.00 | 
+| ume_shrink        |       0 |       0 |         0.00 | 
+| ume_sweep         |       0 |       0 |         0.00 | 
+--------------------------------------------------------
+Starting optimize datapath shifters [v1.0] (stage: post_elab, startdef: riscv_top, recur: true)
+Completed optimize datapath shifters (accepts: 0, rejects: 0, runtime: 0.000s)
+Starting clip mux common data inputs [v1.0] (stage: post_elab, startdef: riscv_top, recur: true)
+Completed clip mux common data inputs (accepts: 1, rejects: 0, runtime: 0.001s)
+Starting clip the non-user hierarchies [v2.0] (stage: post_elab, startdef: riscv_top, recur: true)
+Completed clip the non-user hierarchies (accepts: 2, rejects: 0, runtime: 0.024s)
+Starting basic netlist cleanup [v1.0] (stage: post_elab, startdef: riscv_top, recur: true)
+Completed basic netlist cleanup (accepts: 0, rejects: 0, runtime: 0.001s)
+
+Stage: post_elab
+---------------------------------------------------------------------
+| Transform                      | Accepts | Rejects | Runtime (ms) | 
+---------------------------------------------------------------------
+| hlo_optimize_datapath_shifters |       0 |       0 |         0.00 | 
+| hlo_clip_mux_input             |       1 |       0 |         1.00 | 
+| hlo_clip                       |       2 |       0 |        24.00 | 
+| hlo_cleanup                    |       0 |       0 |         1.00 | 
+---------------------------------------------------------------------
+UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:*                                                                   elaborate
+@file(syn.tcl) 30: puts "init_design -top riscv_top" 
+init_design -top riscv_top
+@file(syn.tcl) 31: init_design -top riscv_top
+Started checking and loading power intent for design riscv_top...
+=================================================================
+No power intent for design 'riscv_top'.
+Completed checking and loading power intent for design riscv_top (runtime:0.00s memory_usage:0.00M peak_memory:0.00M).
+======================================================================================================================
+#
+# Reading SDC /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/clock_constraints_fragment.sdc for view:PVT_0P63V_100C.setup_view (constraint_mode:my_constraint_mode)
+#
+Statistics for commands executed by read_sdc:
+ "create_clock"             - successful      1 , failed      0 (runtime  0.00)
+ "get_clocks"               - successful      1 , failed      0 (runtime  0.00)
+ "set_clock_groups"         - successful      1 , failed      0 (runtime  0.00)
+ "set_clock_uncertainty"    - successful      1 , failed      0 (runtime  0.00)
+read_sdc completed in 00:00:00 (hh:mm:ss)
+#
+# Reading SDC /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc for view:PVT_0P63V_100C.setup_view (constraint_mode:my_constraint_mode)
+#
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '10' of the SDC file '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc'  cannot find any ports named 'operands_bits_A'
+        : Use get_* commands to find the objects along with a wild card entry in the name of the object to check if the object is existing with different naming style.
+Error   : Invalid SDC command option combination. [SDC-204] [set_io_delay]
+        : The set_io_delay command does not accept empty ports lists
+        : This option is not valid for the indicated SDC command. Check the SDC command and contact Cadence customer support if you believe this option combination should be supported.
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '10' of the SDC file '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc': set_input_delay 1000.0 -clock clk [get_port operands_bits_A].
+        : The 'read_sdc' command encountered a problem while trying to evaluate an SDC command. This SDC command will be added to the Tcl variable $::dc::sdc_failed_commands.
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '11' of the SDC file '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc'  cannot find any ports named 'operands_bits_B'
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '11' of the SDC file '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc': set_input_delay 1000.0 -clock clk [get_port operands_bits_B].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '12' of the SDC file '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc'  cannot find any ports named 'operands_val'
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '12' of the SDC file '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc': set_input_delay 1000.0 -clock clk [get_port operands_val].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '13' of the SDC file '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc'  cannot find any ports named 'operands_rdy'
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '13' of the SDC file '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc': set_output_delay 1000.0 -clock clk [get_port operands_rdy].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '14' of the SDC file '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc'  cannot find any ports named 'result_bits_data'
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '14' of the SDC file '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc': set_output_delay 1000.0 -clock clk [get_port result_bits_data].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '15' of the SDC file '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc'  cannot find any ports named 'result_val'
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '15' of the SDC file '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc': set_output_delay 1000.0 -clock clk [get_port result_val].
+Warning : Could not find requested search value. [SDC-208] [get_ports]
+        : The 'get_ports' command on line '16' of the SDC file '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc'  cannot find any ports named 'result_rdy'
+Error   : Could not interpret SDC command. [SDC-202] [read_sdc]
+        : The 'read_sdc' command encountered an error while processing this command on line '16' of the SDC file '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/pin_constraints_fragment.sdc': set_input_delay 1000.0 -clock clk [get_port result_rdy].
+Statistics for commands executed by read_sdc:
+ "all_outputs"              - successful      1 , failed      0 (runtime  0.00)
+ "get_port"                 - successful      1 , failed      7 (runtime  0.00)
+ "set_input_delay"          - successful      1 , failed      4 (runtime  0.00)
+ "set_load"                 - successful      1 , failed      0 (runtime  0.00)
+ "set_output_delay"         - successful      0 , failed      3 (runtime  0.00)
+Warning : Total failed commands during read_sdc are 14
+Warning : One or more commands failed when these constraints were applied. [SDC-209]
+        : The 'read_sdc' command encountered a problem while processing commands.
+        : You can examine the failed commands or save them to a file by querying the Tcl variable $::dc::sdc_failed_commands.
+read_sdc completed in 00:00:00 (hh:mm:ss)
+
+  According to qrc_tech_file, there are total 10 routing layers [ V(5) / H(5) ]
+
+
+  According to qrc_tech_file, there are total 10 routing layers [ V(5) / H(5) ]
+
+  Setting attribute of root '/': 'read_qrc_tech_file_rc_corner' = true
+@file(syn.tcl) 32: puts "read_power_intent -cpf /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/power_spec.cpf" 
+read_power_intent -cpf /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/power_spec.cpf
+@file(syn.tcl) 33: read_power_intent -cpf /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/power_spec.cpf
+Checking out license: Genus_Low_Power_Opt
+[18:49:17.048129] Periodic Lic check successful
+[18:49:17.048146] Feature usage summary:
+[18:49:17.048147] Genus_Synthesis
+[18:49:17.048152] Genus_Low_Power_Opt
+
+Started reading power intent file(s) '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/power_spec.cpf'...
+==================================================================================================================================
+Checking file(s) '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/power_spec.cpf' with CPF linter (version: 18.10-d331 dated:10.09.2018).
+Completed lint check of files (runtime 0.00).
+Completed reading power intent file(s) '/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/power_spec.cpf' (runtime:0.00s memory_usage:0.00M peak_memory:0.00M).
+=======================================================================================================================================================================================
+Started loading library commands in CPF file(s)...
+==================================================
+Completed loading library commands in CPF file(s) (runtime:0.00s memory_usage:0.00M peak_memory:0.00M).
+=======================================================================================================
+@file(syn.tcl) 34: puts "apply_power_intent -summary" 
+apply_power_intent -summary
+@file(syn.tcl) 35: apply_power_intent -summary
+Started checking and loading power intent for design riscv_top...
+=================================================================
+Checking and loading file : /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/power_spec.cpf
+Completed checking and loading power intent for design riscv_top (runtime:0.00s memory_usage:0.00M peak_memory:0.00M).
+======================================================================================================================
+Started applying power intent constraints on design 'design:riscv_top'...
+=========================================================================
+Completed applying power intent constraints on design 'design:riscv_top' (runtime:0.00s memory_usage:0.00M peak_memory:0.00M).
+==============================================================================================================================
+Started analyzing power domain boundaries...
+============================================
+Completed analyzing power domain boundaries (runtime:0.00s memory_usage:0.00M peak_memory:0.00M).
+=================================================================================================
+Tagging rules on existing low power cells...
+===========================================
+Completed tagging rules on low power cells (runtime  0.00).
+==============================================================
+Started setting up virtual pg network...
+========================================
+Completed setting up virtual pg network (runtime:2.00s memory_usage:0.00M peak_memory:0.00M).
+=============================================================================================
+Started identifying always on net segments...
+=============================================
+Completed identifying always on net segments (runtime:0.00s memory_usage:0.00M peak_memory:0.00M).
+==================================================================================================
+Power Intent
+=================================================================================================
+Format : CPF                                                                                     
+File   : /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/power_spec.cpf
+=================================================================================================
+Summary
+===================================
+Number of Power Domains         : 1
+Number of Isolation Rules       : 0
+Number of Level Shifter Rules   : 0
+Number of State Retention Rules : 0
+Number of Power Modes           : 1
+===================================
+@file(syn.tcl) 36: puts "commit_power_intent" 
+commit_power_intent
+@file(syn.tcl) 37: commit_power_intent
+Started inserting low power cells...
+====================================
+Info    : No isolation rules defined. [CPI-502]
+        : Design: 'design:riscv_top'.
+==========================================
+Started inserting isolation cell on zero pin SRPG instances...
+====================================
+Completed inserting 0 isolation cell(s) on Zero-Pin-SRPG cells.
+=================================================
+Info    : No level shifter rules defined. [CPI-503]
+        : Design: 'design:riscv_top'.
+Info    : Completed isolation cell insertion. [CPI-517]
+        : 0 isolation cells inserted.
+Info    : Completed level shifter insertion. [CPI-518]
+        : 0 level shifter cells inserted.
+Merge cell summary: 0
+  ls_followed_by_iso_merge 0
+  iso_followed_by_ls_merge 0
+Completed inserting low power cells (runtime  0.00).
+====================================================
+@file(syn.tcl) 38: puts "set_db root: .auto_ungroup none" 
+set_db root: .auto_ungroup none
+@file(syn.tcl) 39: set_db root: .auto_ungroup none
+  Setting attribute of root '/': 'auto_ungroup' = none
+@file(syn.tcl) 40: puts "set_db phys_flow_effort high" 
+set_db phys_flow_effort high
+@file(syn.tcl) 41: set_db phys_flow_effort high
+  Setting attribute of root '/': 'phys_flow_effort' = high
+@file(syn.tcl) 42: puts "set_db invs_temp_dir /tools/cadence/DDI/DDI221/INNOVUS221/bin/innovus" 
+set_db invs_temp_dir /tools/cadence/DDI/DDI221/INNOVUS221/bin/innovus
+@file(syn.tcl) 43: set_db invs_temp_dir /tools/cadence/DDI/DDI221/INNOVUS221/bin/innovus
+Cannot write to specified directory '/bwrcq/commercial/cds99/DDI/DDI221_ISR2/INNOVUS221/bin/innovus'.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_db]
+        : The value '/tools/cadence/DDI/DDI221/INNOVUS221/bin/innovus' cannot be set for attribute 'invs_temp_dir'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+#@ End verbose source /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/syn.tcl
+1
+Encountered problems processing file: /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/syn.tcl
+WARNING: This version of the tool is 204 days old.
+
+Another Ctrl-C within 1 second will terminate the tool.
+CURRENT RESOURCES: RT {elapsed: 130s, ST: 29s, FG: 29s, CPU: 0.4%}, MEM {curr: 1.3G, peak: 1.3G, phys curr: 0.7G, phys peak: 0.7G}, SYS {load: 14.6, cpu: 128, total: 1574.3G, free: 594.1G}

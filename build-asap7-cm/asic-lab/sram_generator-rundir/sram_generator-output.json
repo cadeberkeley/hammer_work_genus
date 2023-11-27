@@ -40,7 +40,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -82,7 +83,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -124,7 +126,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -166,7 +169,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -208,7 +212,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -250,7 +255,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -292,7 +298,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -334,7 +341,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -376,7 +384,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -418,7 +427,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -460,7 +470,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -502,7 +513,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -544,7 +556,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -586,7 +599,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -628,7 +642,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -670,7 +685,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -712,7 +728,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -754,7 +771,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -796,7 +814,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -838,7 +857,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -880,7 +900,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -922,7 +943,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -964,7 +986,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1006,7 +1029,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1048,7 +1072,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1090,7 +1115,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1132,7 +1158,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1174,7 +1201,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1216,7 +1244,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1258,7 +1287,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1300,7 +1330,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1342,7 +1373,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1384,7 +1416,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1426,7 +1459,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1468,7 +1502,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1510,7 +1545,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1552,7 +1588,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1594,7 +1631,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1636,7 +1674,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1678,7 +1717,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1720,7 +1760,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1762,7 +1803,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1804,7 +1846,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1846,7 +1889,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1888,7 +1932,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1930,7 +1975,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -1972,7 +2018,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2014,7 +2061,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2056,7 +2104,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2098,7 +2147,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2140,7 +2190,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2182,7 +2233,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2224,7 +2276,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2266,7 +2319,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2308,7 +2362,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2350,7 +2405,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2392,7 +2448,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2434,7 +2491,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2476,7 +2534,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2518,7 +2577,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2560,7 +2620,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2602,7 +2663,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2644,7 +2706,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2686,7 +2749,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2728,7 +2792,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2770,7 +2835,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2812,7 +2878,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2854,7 +2921,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2896,7 +2964,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2938,7 +3007,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -2980,7 +3050,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3022,7 +3093,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3064,7 +3136,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3106,7 +3179,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3148,7 +3222,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3190,7 +3265,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3232,7 +3308,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3274,7 +3351,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3316,7 +3394,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3358,7 +3437,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3400,7 +3480,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3442,7 +3523,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3484,7 +3566,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3526,7 +3609,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3568,7 +3652,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3610,7 +3695,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3652,7 +3738,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3694,7 +3781,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3736,7 +3824,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3778,7 +3867,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3820,7 +3910,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3862,7 +3953,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3904,7 +3996,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3946,7 +4039,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -3988,7 +4082,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4030,7 +4125,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4072,7 +4168,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4114,7 +4211,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4156,7 +4254,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4198,7 +4297,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4240,7 +4340,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4282,7 +4383,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4324,7 +4426,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4366,7 +4469,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4408,7 +4512,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4450,7 +4555,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4492,7 +4598,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4534,7 +4641,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4576,7 +4684,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4618,7 +4727,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4660,7 +4770,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4702,7 +4813,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4744,7 +4856,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         },
         {
@@ -4786,7 +4899,8 @@
                 "verilog_synth": null,
                 "spice_model_file": null,
                 "power_grid_library": null,
-                "extra_prefixes": null
+                "extra_prefixes": null,
+                "def_file": null
             }
         }
     ],

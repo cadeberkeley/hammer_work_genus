@@ -152,10 +152,6 @@
     "pin": "QN"
   },
   {
-    "path": "mem/dcache/\\cpu_resp_data_reg[16]",
-    "pin": "Q"
-  },
-  {
     "path": "mem/dcache/\\cpu_resp_data_reg[0]",
     "pin": "Q"
   },
@@ -188,7 +184,11 @@
     "pin": "Q"
   },
   {
-    "path": "mem/dcache/\\cpu_resp_data_reg[9]",
+    "path": "mem/dcache/\\cpu_resp_data_reg[16]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[25]",
     "pin": "Q"
   },
   {
@@ -208,10 +208,6 @@
     "pin": "Q"
   },
   {
-    "path": "mem/dcache/\\cpu_resp_data_reg[23]",
-    "pin": "Q"
-  },
-  {
     "path": "mem/dcache/\\cpu_resp_data_reg[20]",
     "pin": "Q"
   },
@@ -220,19 +216,15 @@
     "pin": "Q"
   },
   {
+    "path": "mem/dcache/\\cpu_resp_data_reg[9]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[24]",
+    "pin": "Q"
+  },
+  {
     "path": "mem/dcache/\\cpu_resp_data_reg[21]",
-    "pin": "Q"
-  },
-  {
-    "path": "mem/dcache/\\cpu_resp_data_reg[4]",
-    "pin": "Q"
-  },
-  {
-    "path": "mem/dcache/\\cpu_resp_data_reg[22]",
-    "pin": "Q"
-  },
-  {
-    "path": "mem/dcache/\\cpu_resp_data_reg[10]",
     "pin": "Q"
   },
   {
@@ -240,15 +232,23 @@
     "pin": "Q"
   },
   {
+    "path": "mem/dcache/\\cpu_resp_data_reg[22]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[4]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[10]",
+    "pin": "Q"
+  },
+  {
+    "path": "mem/dcache/\\cpu_resp_data_reg[23]",
+    "pin": "Q"
+  },
+  {
     "path": "mem/dcache/\\cpu_resp_data_reg[11]",
-    "pin": "Q"
-  },
-  {
-    "path": "mem/dcache/\\cpu_resp_data_reg[25]",
-    "pin": "Q"
-  },
-  {
-    "path": "mem/dcache/\\cpu_resp_data_reg[24]",
     "pin": "Q"
   },
   {

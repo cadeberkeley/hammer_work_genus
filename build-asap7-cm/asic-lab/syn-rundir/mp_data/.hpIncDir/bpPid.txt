@@ -1,0 +1,5 @@
+0
+11 mem/dcache
+3 mem
+12 mem/icache
+1 AO

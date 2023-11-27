@@ -1,0 +1,26 @@
+set nokey
+set size ratio 1
+set label "mem/dcache" at 453817,275093
+set label "mem/icache" at 625932,996596
+plot '-' w l lc rgb "red", '-' w l lc rgb "green"
+0 0
+0 1600000
+1400000 1600000
+1400000 0
+0 0
+EOF
+
+453817 275093
+453817 599699
+778423 599699
+778423 275093
+453817 275093
+
+625932 996596
+625932 1313250
+942586 1313250
+942586 996596
+625932 996596
+
+EOF
+pause -1 'Press any key'

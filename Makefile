@@ -35,7 +35,7 @@ DESIGN_SYN_CONF     ?= configs-design/$(design)/syn.yml
 DESIGN_PAR_CONF     ?= configs-design/$(design)/par.yml
 
 
-PROJ_YMLS           ?= $(PDK_CONF) $(TOOLS_CONF) $(DESIGN_CONF) $(DESIGN_PDK_CONF) $(SIM_CONF) $(POWER_CONF) $(SRAM_CONF) $(extra)
+PROJ_YMLS           ?= $(PDK_CONF) $(TOOLS_CONF) $(DESIGN_CONF) $(DESIGN_PDK_CONF) $(DESIGN_PAR_CONF) $(SIM_CONF) $(POWER_CONF) $(SRAM_CONF) $(extra)
 HAMMER_EXTRA_ARGS   ?= $(foreach conf, $(PROJ_YMLS), -p $(conf)) $(args)
 
 HAMMER_D_MK = $(OBJ_DIR)/hammer.d

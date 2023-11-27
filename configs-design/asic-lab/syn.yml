@@ -46,4 +46,4 @@ vlsi.inputs.delays: [
   {name: "mem*", clock: "clk", direction: "input", delay: *CLK_PERIOD_BY_5}
 ]
 
-# Synthesis Constraints
+synthesis.genus.def_file: "asic-lab.def"
