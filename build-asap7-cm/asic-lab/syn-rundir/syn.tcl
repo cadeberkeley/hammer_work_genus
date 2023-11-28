@@ -215,8 +215,8 @@ if { [get_db lib_cells */AOI32xp33*] ne "" } {
             
 puts "write_db -to_file pre_syn_generic" 
 write_db -to_file pre_syn_generic
-puts "create_floorplan -core_size { 350.0 400.0 0.0 0.0 350.0 400.0 }" 
-create_floorplan -core_size { 350.0 400.0 0.0 0.0 350.0 400.0 }
+puts "read_def /tools/scratch/caderichard/hammer_work/configs-design/asic-lab/asic-lab.def" 
+read_def /tools/scratch/caderichard/hammer_work/configs-design/asic-lab/asic-lab.def
 puts "syn_generic -physical" 
 syn_generic -physical
 puts "write_db -to_file pre_syn_map" 
@@ -284,6 +284,8 @@ puts "write_reports -directory reports -tag final"
 write_reports -directory reports -tag final
 puts "report_ple > reports/final_ple.rpt" 
 report_ple > reports/final_ple.rpt
+puts "report_timing -unconstrained -max_paths 50 > reports/final_unconstrained.rpt" 
+report_timing -unconstrained -max_paths 50 > reports/final_unconstrained.rpt
 puts "write_db -to_file pre_write_outputs" 
 write_db -to_file pre_write_outputs
 puts "write_hdl > /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/riscv_top.mapped.v" 

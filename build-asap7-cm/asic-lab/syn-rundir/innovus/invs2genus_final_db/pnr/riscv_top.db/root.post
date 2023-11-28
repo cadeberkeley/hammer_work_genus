@@ -4,13 +4,13 @@
 ::db::check_and_set_root_attr delaycal_ignore_net_load false
 ::db::check_and_set_root_attr design_bottom_routing_layer M2
 ::db::check_and_set_root_attr design_power_effort none
-::db::check_and_set_root_attr extract_rc_pre_place_cap_scale_factor 0.37
+::db::check_and_set_root_attr extract_rc_pre_place_cap_scale_factor 0.3625
 ::db::check_and_set_root_attr extract_rc_pre_place_fanout_penalty 0.0
 ::db::check_and_set_root_attr extract_rc_pre_place_fanout_threshold 10
-::db::check_and_set_root_attr extract_rc_pre_place_res_scale_factor 0.9356
+::db::check_and_set_root_attr extract_rc_pre_place_res_scale_factor 0.9321
 ::db::check_and_set_root_attr extract_rc_pre_place_site_size 1.224
-::db::check_and_set_root_attr extract_rc_pre_place_wire_length_slope 3.5972
-::db::check_and_set_root_attr extract_rc_pre_place_wire_length_y0 1.3472
+::db::check_and_set_root_attr extract_rc_pre_place_wire_length_slope 2.048
+::db::check_and_set_root_attr extract_rc_pre_place_wire_length_y0 2.9979
 ::db::check_and_set_root_attr floorplan_default_tech_site asap7sc7p5t
 ::db::check_and_set_root_attr floorplan_first_row_site_index 0
 ::db::check_and_set_root_attr floorplan_last_row_site_index -1

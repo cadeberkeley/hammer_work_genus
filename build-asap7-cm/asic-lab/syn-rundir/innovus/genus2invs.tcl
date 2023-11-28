@@ -1,17 +1,17 @@
 # (C) 2023 Cadence Design Systems, Inc.  All rights reserved.
-# Created by Genus(TM) Synthesis Solution on 11/26/2023 18:57:08
+# Created by Genus(TM) Synthesis Solution on 11/28/2023 12:28:08
 # This script uses internal commands and variables that may change without notice.
 
 
 #####################################################################
 #
 # Innovus batch script file
-# Created by Genus(TM) Synthesis Solution on 11/26/2023 18:57:08
+# Created by Genus(TM) Synthesis Solution on 11/28/2023 12:28:08
 #
 #####################################################################
 set_db source_verbose false
 
-      if { [file isdirectory [set tmpdir /tmp/genus_temp_98839_bwrcix-2.eecs.berkeley.edu_cade.richard_1t6wk1]] && [file writable $tmpdir] } {
+      if { [file isdirectory [set tmpdir /tmp/genus_temp_27067_bwrcix-2.eecs.berkeley.edu_cade.richard_IvgqPD]] && [file writable $tmpdir] } {
         set ::env(TMPDIR) $tmpdir
         set ::syn2ambit_tmp_dir $tmpdir
       }
@@ -149,7 +149,7 @@ pqos_eval {
         if { ![info exists rcp::using_genus_license] } {
           place_opt_design -phys_syn -out_dir ./innovus -prefix invs2genus_final
         } else {
-          rcp::optimization1_place_opt_design__phys_syn__out_dir___innovus__prefix_invs2genus_final.882592590005413
+          rcp::optimization1_place_opt_design__phys_syn__out_dir___innovus__prefix_invs2genus_final.7780421994524274
         }
       }
     
@@ -162,7 +162,7 @@ pqos_eval {
         if { ![info exists rcp::using_genus_license] } {
           ::rcp::syncronize_metrics 0
         } else {
-          rcp::optimization2___rcp__syncronize_metrics_0.7336602209758294
+          rcp::optimization2___rcp__syncronize_metrics_0.5552461969457781
         }
       }
     

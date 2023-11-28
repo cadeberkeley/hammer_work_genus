@@ -33,9 +33,9 @@ set enc_stats(enc_cg_nvio) 0
 set enc_stats(enc_util) 0.007409
 # route_stats
 set enc_stats(enc_ver) 22.12-s080_1
-set enc_stats(enc_cpu) 104.840000
-set enc_stats(enc_mem) 2737.101562
-set enc_stats(enc_real) 147.000000
+set enc_stats(enc_cpu) 109.690000
+set enc_stats(enc_mem) 2750.281250
+set enc_stats(enc_real) 150.000000
 set enc_stats(enc_mode) qos_mode
 set enc_stats(enc_lic) FE_GPS
 set enc_stats(enc_oflowh) 0.10

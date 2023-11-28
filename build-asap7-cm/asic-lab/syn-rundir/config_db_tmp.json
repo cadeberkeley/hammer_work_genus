@@ -49,10 +49,14 @@
     "par.blockage_spacing": 2.0,
     "par.blockage_spacing_top_layer": null,
     "par.generate_power_straps_method": "by_tracks",
+    "par.generate_power_straps_options.by_tracks.antenna_trim_shape": "stripe",
     "par.generate_power_straps_options.by_tracks.blockage_spacing": 2.0,
+    "par.generate_power_straps_options.by_tracks.bottom_via_layer": "rail",
+    "par.generate_power_straps_options.by_tracks.generate_rail_layer": true,
     "par.generate_power_straps_options.by_tracks.pin_layers": [
         "M9"
     ],
+    "par.generate_power_straps_options.by_tracks.power_nets": [],
     "par.generate_power_straps_options.by_tracks.power_utilization": 0.25,
     "par.generate_power_straps_options.by_tracks.power_utilization_M3": 0.6,
     "par.generate_power_straps_options.by_tracks.power_utilization_M8": 1.0,
@@ -2462,13 +2466,17 @@
     "vlsi.inputs.supplies.ground": [
         {
             "name": "VSS",
-            "pin": "VSS"
+            "pins": [
+                "VSS"
+            ]
         }
     ],
     "vlsi.inputs.supplies.power": [
         {
             "name": "VDD",
-            "pin": "VDD"
+            "pins": [
+                "VDD"
+            ]
         }
     ],
     "vlsi.inputs.visualization.mode": "all",

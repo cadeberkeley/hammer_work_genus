@@ -2,7 +2,7 @@
 #
 # Genus(TM) Synthesis Solution setup file
 # Created by Genus(TM) Synthesis Solution 22.12-s082_1
-#   on 11/26/2023 18:20:12
+#   on 11/28/2023 12:02:46
 #
 # This file can only be run in Genus Common UI mode.
 #
@@ -84,8 +84,8 @@ set _net_area_ [::legacy::get_attribute net_area design:riscv_top]
 if {[regexp {^-?[0-9.]+$} $_net_area_]} {
   set _net_area_ [format %.0f $_net_area_]
 }
-if {$_net_area_ != "1132"} {
-   mesg_send [::legacy::find -message /messages/PHYS/PHYS-92] "golden net area: 1132,  current net area: $_net_area_"
+if {$_net_area_ != "1006"} {
+   mesg_send [::legacy::find -message /messages/PHYS/PHYS-92] "golden net area: 1006,  current net area: $_net_area_"
 }
 unset _net_area_
 # library domain count

@@ -1,7 +1,7 @@
 ################################################################################
 #
 # Innovus mode file
-# Created by Genus(TM) Synthesis Solution on 11/26/2023 18:57:08
+# Created by Genus(TM) Synthesis Solution on 11/28/2023 12:28:08
 #
 ################################################################################
 [expr {[is_common_ui_mode] ? "eval_legacy" : "eval"}] {
@@ -14,13 +14,13 @@ set_global timing_clock_phase_propagation both
 setDesignMode -powerEffort none
 setOptMode -leakageToDynamicRatio 1.0
 if {[is_attribute -obj_type root extract_rc_pre_place_wire_length_slope]} {
-catch {setExtractRCMode -prePlaceWireLengthSlope 3.5972}
-catch {setExtractRCMode -prePlaceWireLengthY0 1.3472}
+catch {setExtractRCMode -prePlaceWireLengthSlope 2.0480}
+catch {setExtractRCMode -prePlaceWireLengthY0 2.9979}
 catch {setExtractRCMode -prePlaceFanoutPenalty 0.0000}
 catch {setExtractRCMode -prePlaceFanoutThreshold 10}
 catch {setExtractRCMode -prePlaceSiteSize 1.2240}
-catch {setExtractRCMode -prePlaceCapScaleFactor 0.3700}
-catch {setExtractRCMode -prePlaceResScaleFactor 0.9356}
+catch {setExtractRCMode -prePlaceCapScaleFactor 0.3625}
+catch {setExtractRCMode -prePlaceResScaleFactor 0.9321}
 }
 pqos_eval { rcp::push_and_set_state  -format 3 -set_name "genus2invs_modes" {
 {set_global timing_apply_default_primary_input_assertion false}
