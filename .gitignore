@@ -1,2 +1,3 @@
 *.log
 build-*/
+test_phys_effort/reports_*/
