@@ -1,0 +1,105 @@
+====
+1:3c
+  Working Directory = /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab-effort_none/syn-rundir
+2:3c
+  Working Directory = /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab-effort_medium/syn-rundir
+3:3c
+  Working Directory = /bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab-effort_high/syn-rundir
+====
+1:8,10c
+  Slack (ps):                        17
+    R2R (ps):                        85
+    I2R (ps):                        17
+2:8,10c
+  Slack (ps):                        19
+    R2R (ps):                        85
+    I2R (ps):                        19
+3:8,10c
+  Slack (ps):                       -45
+    R2R (ps):                        64
+    I2R (ps):                       -45
+====3
+1:14c
+2:14c
+  TNS (ps):                           0
+3:14c
+  TNS (ps):                      -7,187
+====3
+1:16c
+2:16c
+    I2R (ps):                         0
+3:16c
+    I2R (ps):                    -7,187
+====
+1:20,29c
+  Failing Paths:                      0
+  Cell Area:                     12,517
+  Total Cell Area:               12,517
+  Leaf Instances:                   293
+  Total Instances:                  293
+  Utilization (%):                 0.00
+  Tot. Net Length (um):        no_value
+  Avg. Net Length (um):        no_value
+  Route Overflow H (%):        no_value
+  Route Overflow V (%):        no_value
+2:20,29c
+  Failing Paths:                      0
+  Cell Area:                     12,510
+  Total Cell Area:               12,510
+  Leaf Instances:                   291
+  Total Instances:                  291
+  Utilization (%):                 8.95
+  Tot. Net Length (um):        no_value
+  Avg. Net Length (um):        no_value
+  Route Overflow H (%):            0.01
+  Route Overflow V (%):            0.02
+3:20,29c
+  Failing Paths:                    470
+  Cell Area:                     13,864
+  Total Cell Area:               13,864
+  Leaf Instances:                   924
+  Total Instances:                  924
+  Utilization (%):                 1.64
+  Tot. Net Length (um):         117,230
+  Avg. Net Length (um):              41
+  Route Overflow H (%):            0.10
+  Route Overflow V (%):            0.01
+====
+1:32,33c
+    Max Cong:                  no_value
+    Tot Cong:                  no_value
+2:32,33c
+    Max Cong:                      0.00
+    Tot Cong:                      0.00
+3:32,33c
+    Max Cong:                      0.17
+    Tot Cong:                      0.17
+====
+1:35,39c
+  CPU  Runtime (h:m:s):        00:00:45
+  Real Runtime (h:m:s):        00:00:50
+  CPU  Elapsed (h:m:s):        00:00:54
+  Real Elapsed (h:m:s):        00:00:54
+  Memory (MB):                  1603.18
+2:35,39c
+  CPU  Runtime (h:m:s):        00:01:37
+  Real Runtime (h:m:s):        00:01:47
+  CPU  Elapsed (h:m:s):        00:01:46
+  Real Elapsed (h:m:s):        00:01:51
+  Memory (MB):                  1763.87
+3:35,39c
+  CPU  Runtime (h:m:s):        00:00:28
+  Real Runtime (h:m:s):        00:04:10
+  CPU  Elapsed (h:m:s):        00:07:40
+  Real Elapsed (h:m:s):        00:11:37
+  Memory (MB):                  2351.83
+====
+1:44,45c
+  Total Runtime (h:m:s): 00:00:51
+  Total Memory (MB):     1603.18
+2:44,45c
+  Total Runtime (h:m:s): 00:01:47
+  Total Memory (MB):     1763.87
+3:44,45c
+  Total Runtime (h:m:s): 00:11:32
+  Total Memory (MB):     2351.83

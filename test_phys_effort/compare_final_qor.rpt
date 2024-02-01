@@ -1,0 +1,189 @@
+====
+1:3c
+    Generated on:           Jan 31 2024  11:14:06 pm
+2:3c
+    Generated on:           Jan 31 2024  11:30:14 pm
+3:3c
+    Generated on:           Feb 01 2024  12:16:54 am
+====3
+1:83a
+2:83a
+3:84,162c
+    Library domain:         PVT_0P77V_0C.hold_cond
+      Domain index:         1
+      Technology libraries: asap7sc7p5t_SIMPLE_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SIMPLE_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SIMPLE_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SIMPLE_SRAM_FF_nldm_201020 1.0
+                            asap7sc7p5t_AO_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_AO_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_AO_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_AO_SRAM_FF_nldm_201020 1.0
+                            asap7sc7p5t_OA_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_OA_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_OA_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_OA_SRAM_FF_nldm_201020 1.0
+                            asap7sc7p5t_SEQ_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SEQ_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SEQ_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SEQ_SRAM_FF_nldm_201020 1.0
+                            asap7sc7p5t_INVBUF_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_INVBUF_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_INVBUF_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_INVBUF_SRAM_FF_nldm_201020 1.0
+                            SRAM1RW1024x16_PVT_0P77V_0C 0
+                            SRAM1RW1024x17_PVT_0P77V_0C 0
+                            SRAM1RW1024x32_PVT_0P77V_0C 0
+                            SRAM1RW1024x37_PVT_0P77V_0C 0
+                            SRAM1RW1024x38_PVT_0P77V_0C 0
+                            SRAM1RW1024x44_PVT_0P77V_0C 0
+                            SRAM1RW1024x64_PVT_0P77V_0C 0
+                            SRAM1RW1024x8_PVT_0P77V_0C 0
+                            SRAM1RW2048x8_PVT_0P77V_0C 0
+                            SRAM1RW128x12_PVT_0P77V_0C 0
+                            SRAM1RW128x14_PVT_0P77V_0C 0
+                            SRAM1RW128x22_PVT_0P77V_0C 0
+                            SRAM1RW128x40_PVT_0P77V_0C 0
+                            SRAM1RW128x46_PVT_0P77V_0C 0
+                            SRAM1RW128x48_PVT_0P77V_0C 0
+                            SRAM1RW128x64_PVT_0P77V_0C 0
+                            SRAM1RW128x8_PVT_0P77V_0C 0
+                            SRAM1RW256x128_PVT_0P77V_0C 0
+                            SRAM1RW256x32_PVT_0P77V_0C 0
+                            SRAM1RW256x46_PVT_0P77V_0C 0
+                            SRAM1RW256x48_PVT_0P77V_0C 0
+                            SRAM1RW256x64_PVT_0P77V_0C 0
+                            SRAM1RW256x8_PVT_0P77V_0C 0
+                            SRAM1RW32x50_PVT_0P77V_0C 0
+                            SRAM1RW4096x16_PVT_0P77V_0C 0
+                            SRAM1RW4096x8_PVT_0P77V_0C 0
+                            SRAM1RW512x128_PVT_0P77V_0C 0
+                            SRAM1RW512x32_PVT_0P77V_0C 0
+                            SRAM1RW512x64_PVT_0P77V_0C 0
+                            SRAM1RW512x8_PVT_0P77V_0C 0
+                            SRAM1RW64x128_PVT_0P77V_0C 0
+                            SRAM1RW64x20_PVT_0P77V_0C 0
+                            SRAM1RW64x21_PVT_0P77V_0C 0
+                            SRAM1RW64x22_PVT_0P77V_0C 0
+                            SRAM1RW64x32_PVT_0P77V_0C 0
+                            SRAM1RW64x34_PVT_0P77V_0C 0
+                            SRAM1RW64x8_PVT_0P77V_0C 0
+                            SRAM2RW128x16_PVT_0P77V_0C 0
+                            SRAM2RW128x32_PVT_0P77V_0C 0
+                            SRAM2RW128x4_PVT_0P77V_0C 0
+                            SRAM2RW128x8_PVT_0P77V_0C 0
+                            SRAM2RW16x16_PVT_0P77V_0C 0
+                            SRAM2RW16x32_PVT_0P77V_0C 0
+                            SRAM2RW16x4_PVT_0P77V_0C 0
+                            SRAM2RW16x8_PVT_0P77V_0C 0
+                            SRAM2RW32x16_PVT_0P77V_0C 0
+                            SRAM2RW32x22_PVT_0P77V_0C 0
+                            SRAM2RW32x32_PVT_0P77V_0C 0
+                            SRAM2RW32x33_PVT_0P77V_0C 0
+                            SRAM2RW32x39_PVT_0P77V_0C 0
+                            SRAM2RW32x4_PVT_0P77V_0C 0
+                            SRAM2RW32x8_PVT_0P77V_0C 0
+                            SRAM2RW64x16_PVT_0P77V_0C 0
+                            SRAM2RW64x24_PVT_0P77V_0C 0
+                            SRAM2RW64x32_PVT_0P77V_0C 0
+                            SRAM2RW64x4_PVT_0P77V_0C 0
+                            SRAM2RW64x8_PVT_0P77V_0C 0
+====
+1:85c
+    Interconnect mode:      global
+2:85c
+    Interconnect mode:      spatial
+3:164,165c
+    Operating conditions:   _nominal_ 
+    Interconnect mode:      placement
+====
+1:97,105c
+           Analysis                 Cost         Critical        Violating 
+             View                  Group        Path Slack  TNS    Paths   
+  -------------------------------------------------------------------------
+  PVT_0P63V_100C.setup_view cg_enable_group_clk   No paths  0.0          0 
+                                            clk       16.9  0.0          0 
+                                        default   No paths  0.0          0 
+  -------------------------------------------------------------------------
+  Total                                                    -0.0          0 
+                                                                           
+2:97,105c
+           Analysis                 Cost         Critical        Violating 
+             View                  Group        Path Slack  TNS    Paths   
+  -------------------------------------------------------------------------
+  PVT_0P63V_100C.setup_view cg_enable_group_clk   No paths  0.0          0 
+                                            clk       18.8  0.0          0 
+                                        default   No paths  0.0          0 
+  -------------------------------------------------------------------------
+  Total                                                    -0.0          0 
+                                                                           
+3:177,184c
+           Analysis           Cost   Critical           Violating 
+             View            Group  Path Slack   TNS      Paths   
+  ----------------------------------------------------------------
+  PVT_0P63V_100C.setup_view     clk      -44.8 -7186.8        470 
+                            default   No paths     0.0          0 
+  ----------------------------------------------------------------
+  Total                                        -7186.8        470 
+                                                                  
+====
+1:109c
+  Leaf Instance Count             293 
+2:109c
+  Leaf Instance Count             291 
+3:188c
+  Leaf Instance Count             924 
+====
+1:112c
+  Combinational Instance Count    152 
+2:112c
+  Combinational Instance Count    150 
+3:191c
+  Combinational Instance Count    783 
+====
+1:117c
+  Cell Area                          12517.093
+2:117c
+  Cell Area                          12509.861
+3:196c
+  Cell Area                          13864.052
+====
+1:119,121c
+  Total Cell Area (Cell+Physical)    12517.093
+  Net Area                           387.893
+  Total Area (Cell+Physical+Net)     12904.986
+2:119,121c
+  Total Cell Area (Cell+Physical)    12509.861
+  Net Area                           465.856
+  Total Area (Cell+Physical+Net)     12975.717
+3:198,200c
+  Total Cell Area (Cell+Physical)    13864.052
+  Net Area                           9847.330
+  Total Area (Cell+Physical+Net)     23711.382
+====
+1:122a
+2:123c
+  Floorplan Utilization              8.95%
+3:202c
+  Floorplan Utilization              1.64%
+====
+1:124,127c
+  Elapsed Runtime                    61 seconds
+  Genus peak memory usage            1603.18 
+  Innovus peak memory usage          no_value 
+  Hostname                           bwrcr740-5.EECS.Berkeley.EDU
+2:125,128c
+  Elapsed Runtime                    116 seconds
+  Genus peak memory usage            1763.87 
+  Innovus peak memory usage          no_value 
+  Hostname                           bwrcix-2.EECS.Berkeley.EDU
+3:204,212c
+  Elapsed Runtime                    704 seconds
+  Genus peak memory usage            2348.01 
+  Innovus peak memory usage          2690.617188 
+  Hostname                           bwrcix-2.EECS.Berkeley.EDU
+  
+  Physical Data
+  -------------
+  Total Net Length                   117230.12 um
+  Average Net Length                 40.90 um

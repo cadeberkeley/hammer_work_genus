@@ -1,7 +1,7 @@
 {
     "vlsi.builtins.is_complete": false,
     "synthesis.outputs.output_files": [
-        "/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/riscv_top.mapped.v"
+        "/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab-effort_high/syn-rundir/riscv_top.mapped.v"
     ],
     "synthesis.inputs.input_files": [
         "src-asic-lab/ALUdec.v",
@@ -35,8 +35,8 @@
         "src-asic-lab/util.vh"
     ],
     "synthesis.inputs.top_module": "riscv_top",
-    "synthesis.outputs.sdc": "/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/riscv_top.mapped.sdc",
-    "synthesis.outputs.seq_cells": "/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/find_regs_cells.json",
-    "synthesis.outputs.all_regs": "/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/find_regs_paths.json",
-    "synthesis.outputs.sdf_file": "/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab/syn-rundir/riscv_top.mapped.sdf"
+    "synthesis.outputs.sdc": "/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab-effort_high/syn-rundir/riscv_top.mapped.sdc",
+    "synthesis.outputs.seq_cells": "/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab-effort_high/syn-rundir/find_regs_cells.json",
+    "synthesis.outputs.all_regs": "/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab-effort_high/syn-rundir/find_regs_paths.json",
+    "synthesis.outputs.sdf_file": "/bwrcq/scratch/caderichard/hammer_work/build-asap7-cm/asic-lab-effort_high/syn-rundir/riscv_top.mapped.sdf"
 }

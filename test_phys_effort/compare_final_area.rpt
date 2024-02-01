@@ -1,0 +1,129 @@
+====
+1:3c
+    Generated on:           Jan 31 2024  11:14:05 pm
+2:3c
+    Generated on:           Jan 31 2024  11:30:14 pm
+3:3c
+    Generated on:           Feb 01 2024  12:16:55 am
+====3
+1:83a
+2:83a
+3:84,162c
+    Library domain:         PVT_0P77V_0C.hold_cond
+      Domain index:         1
+      Technology libraries: asap7sc7p5t_SIMPLE_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SIMPLE_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SIMPLE_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SIMPLE_SRAM_FF_nldm_201020 1.0
+                            asap7sc7p5t_AO_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_AO_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_AO_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_AO_SRAM_FF_nldm_201020 1.0
+                            asap7sc7p5t_OA_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_OA_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_OA_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_OA_SRAM_FF_nldm_201020 1.0
+                            asap7sc7p5t_SEQ_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SEQ_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SEQ_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SEQ_SRAM_FF_nldm_201020 1.0
+                            asap7sc7p5t_INVBUF_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_INVBUF_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_INVBUF_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_INVBUF_SRAM_FF_nldm_201020 1.0
+                            SRAM1RW1024x16_PVT_0P77V_0C 0
+                            SRAM1RW1024x17_PVT_0P77V_0C 0
+                            SRAM1RW1024x32_PVT_0P77V_0C 0
+                            SRAM1RW1024x37_PVT_0P77V_0C 0
+                            SRAM1RW1024x38_PVT_0P77V_0C 0
+                            SRAM1RW1024x44_PVT_0P77V_0C 0
+                            SRAM1RW1024x64_PVT_0P77V_0C 0
+                            SRAM1RW1024x8_PVT_0P77V_0C 0
+                            SRAM1RW2048x8_PVT_0P77V_0C 0
+                            SRAM1RW128x12_PVT_0P77V_0C 0
+                            SRAM1RW128x14_PVT_0P77V_0C 0
+                            SRAM1RW128x22_PVT_0P77V_0C 0
+                            SRAM1RW128x40_PVT_0P77V_0C 0
+                            SRAM1RW128x46_PVT_0P77V_0C 0
+                            SRAM1RW128x48_PVT_0P77V_0C 0
+                            SRAM1RW128x64_PVT_0P77V_0C 0
+                            SRAM1RW128x8_PVT_0P77V_0C 0
+                            SRAM1RW256x128_PVT_0P77V_0C 0
+                            SRAM1RW256x32_PVT_0P77V_0C 0
+                            SRAM1RW256x46_PVT_0P77V_0C 0
+                            SRAM1RW256x48_PVT_0P77V_0C 0
+                            SRAM1RW256x64_PVT_0P77V_0C 0
+                            SRAM1RW256x8_PVT_0P77V_0C 0
+                            SRAM1RW32x50_PVT_0P77V_0C 0
+                            SRAM1RW4096x16_PVT_0P77V_0C 0
+                            SRAM1RW4096x8_PVT_0P77V_0C 0
+                            SRAM1RW512x128_PVT_0P77V_0C 0
+                            SRAM1RW512x32_PVT_0P77V_0C 0
+                            SRAM1RW512x64_PVT_0P77V_0C 0
+                            SRAM1RW512x8_PVT_0P77V_0C 0
+                            SRAM1RW64x128_PVT_0P77V_0C 0
+                            SRAM1RW64x20_PVT_0P77V_0C 0
+                            SRAM1RW64x21_PVT_0P77V_0C 0
+                            SRAM1RW64x22_PVT_0P77V_0C 0
+                            SRAM1RW64x32_PVT_0P77V_0C 0
+                            SRAM1RW64x34_PVT_0P77V_0C 0
+                            SRAM1RW64x8_PVT_0P77V_0C 0
+                            SRAM2RW128x16_PVT_0P77V_0C 0
+                            SRAM2RW128x32_PVT_0P77V_0C 0
+                            SRAM2RW128x4_PVT_0P77V_0C 0
+                            SRAM2RW128x8_PVT_0P77V_0C 0
+                            SRAM2RW16x16_PVT_0P77V_0C 0
+                            SRAM2RW16x32_PVT_0P77V_0C 0
+                            SRAM2RW16x4_PVT_0P77V_0C 0
+                            SRAM2RW16x8_PVT_0P77V_0C 0
+                            SRAM2RW32x16_PVT_0P77V_0C 0
+                            SRAM2RW32x22_PVT_0P77V_0C 0
+                            SRAM2RW32x32_PVT_0P77V_0C 0
+                            SRAM2RW32x33_PVT_0P77V_0C 0
+                            SRAM2RW32x39_PVT_0P77V_0C 0
+                            SRAM2RW32x4_PVT_0P77V_0C 0
+                            SRAM2RW32x8_PVT_0P77V_0C 0
+                            SRAM2RW64x16_PVT_0P77V_0C 0
+                            SRAM2RW64x24_PVT_0P77V_0C 0
+                            SRAM2RW64x32_PVT_0P77V_0C 0
+                            SRAM2RW64x4_PVT_0P77V_0C 0
+                            SRAM2RW64x8_PVT_0P77V_0C 0
+====
+1:85c
+    Interconnect mode:      global
+2:85c
+    Interconnect mode:      spatial
+3:164,165c
+    Operating conditions:   _nominal_ 
+    Interconnect mode:      placement
+====
+1:91,99c
+  riscv_top                                293  12517.093   387.893    12904.986 
+    cpu              Riscv151              132    353.886    56.411      410.297 
+      DATA_DX        RiscvDataDX           130    348.287    55.912      404.199 
+        DATA_REGFILE Regfile               130    348.287    55.912      404.199 
+      PC_GEN         PCGen                   2      5.599     0.499        6.097 
+    mem              Memory151             157  12135.214    79.277    12214.490 
+      arbiter        riscv_arbiter          13     23.095     5.218       28.312 
+      dcache         cache_1                99   6168.034    49.837     6217.871 
+      icache         cache                  44   5943.385    20.283     5963.668 
+2:91,99c
+  riscv_top                                291  12509.861   465.856    12975.717 
+    cpu              Riscv151              132    353.886    78.346      432.232 
+      DATA_DX        RiscvDataDX           130    348.287    77.615      425.902 
+        DATA_REGFILE Regfile               130    348.287    77.615      425.902 
+      PC_GEN         PCGen                   2      5.599     0.731        6.330 
+    mem              Memory151             155  12127.982   102.852    12230.834 
+      arbiter        riscv_arbiter           9     14.230     3.871       18.101 
+      dcache         cache_1               101   6168.967    68.441     6237.408 
+      icache         cache                  44   5944.085    25.883     5969.968 
+3:171,179c
+  riscv_top                                924  13864.052  9847.330    23711.382 
+    cpu              Riscv151              100    301.631    68.602      370.233 
+      DATA_DX        RiscvDataDX            98    296.032    68.276      364.308 
+        DATA_REGFILE Regfile                98    296.032    68.276      364.308 
+      PC_GEN         PCGen                   2      5.599     0.327        5.925 
+    mem              Memory151             811  13513.665  4150.715    17664.380 
+      arbiter        riscv_arbiter          13     15.163     1.941       17.105 
+      dcache         cache_1               418   6830.782  1687.555     8518.338 
+      icache         cache                 377   6663.054  2328.232     8991.286 

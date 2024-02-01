@@ -1,0 +1,338 @@
+====
+1:3c
+    Generated on:           Jan 31 2024  11:14:06 pm
+2:3c
+    Generated on:           Jan 31 2024  11:30:15 pm
+3:3c
+    Generated on:           Feb 01 2024  12:16:55 am
+====3
+1:83a
+2:83a
+3:84,162c
+    Library domain:         PVT_0P77V_0C.hold_cond
+      Domain index:         1
+      Technology libraries: asap7sc7p5t_SIMPLE_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SIMPLE_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SIMPLE_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SIMPLE_SRAM_FF_nldm_201020 1.0
+                            asap7sc7p5t_AO_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_AO_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_AO_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_AO_SRAM_FF_nldm_201020 1.0
+                            asap7sc7p5t_OA_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_OA_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_OA_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_OA_SRAM_FF_nldm_201020 1.0
+                            asap7sc7p5t_SEQ_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SEQ_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SEQ_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_SEQ_SRAM_FF_nldm_201020 1.0
+                            asap7sc7p5t_INVBUF_RVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_INVBUF_LVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_INVBUF_SLVT_FF_nldm_201020 1.0
+                            asap7sc7p5t_INVBUF_SRAM_FF_nldm_201020 1.0
+                            SRAM1RW1024x16_PVT_0P77V_0C 0
+                            SRAM1RW1024x17_PVT_0P77V_0C 0
+                            SRAM1RW1024x32_PVT_0P77V_0C 0
+                            SRAM1RW1024x37_PVT_0P77V_0C 0
+                            SRAM1RW1024x38_PVT_0P77V_0C 0
+                            SRAM1RW1024x44_PVT_0P77V_0C 0
+                            SRAM1RW1024x64_PVT_0P77V_0C 0
+                            SRAM1RW1024x8_PVT_0P77V_0C 0
+                            SRAM1RW2048x8_PVT_0P77V_0C 0
+                            SRAM1RW128x12_PVT_0P77V_0C 0
+                            SRAM1RW128x14_PVT_0P77V_0C 0
+                            SRAM1RW128x22_PVT_0P77V_0C 0
+                            SRAM1RW128x40_PVT_0P77V_0C 0
+                            SRAM1RW128x46_PVT_0P77V_0C 0
+                            SRAM1RW128x48_PVT_0P77V_0C 0
+                            SRAM1RW128x64_PVT_0P77V_0C 0
+                            SRAM1RW128x8_PVT_0P77V_0C 0
+                            SRAM1RW256x128_PVT_0P77V_0C 0
+                            SRAM1RW256x32_PVT_0P77V_0C 0
+                            SRAM1RW256x46_PVT_0P77V_0C 0
+                            SRAM1RW256x48_PVT_0P77V_0C 0
+                            SRAM1RW256x64_PVT_0P77V_0C 0
+                            SRAM1RW256x8_PVT_0P77V_0C 0
+                            SRAM1RW32x50_PVT_0P77V_0C 0
+                            SRAM1RW4096x16_PVT_0P77V_0C 0
+                            SRAM1RW4096x8_PVT_0P77V_0C 0
+                            SRAM1RW512x128_PVT_0P77V_0C 0
+                            SRAM1RW512x32_PVT_0P77V_0C 0
+                            SRAM1RW512x64_PVT_0P77V_0C 0
+                            SRAM1RW512x8_PVT_0P77V_0C 0
+                            SRAM1RW64x128_PVT_0P77V_0C 0
+                            SRAM1RW64x20_PVT_0P77V_0C 0
+                            SRAM1RW64x21_PVT_0P77V_0C 0
+                            SRAM1RW64x22_PVT_0P77V_0C 0
+                            SRAM1RW64x32_PVT_0P77V_0C 0
+                            SRAM1RW64x34_PVT_0P77V_0C 0
+                            SRAM1RW64x8_PVT_0P77V_0C 0
+                            SRAM2RW128x16_PVT_0P77V_0C 0
+                            SRAM2RW128x32_PVT_0P77V_0C 0
+                            SRAM2RW128x4_PVT_0P77V_0C 0
+                            SRAM2RW128x8_PVT_0P77V_0C 0
+                            SRAM2RW16x16_PVT_0P77V_0C 0
+                            SRAM2RW16x32_PVT_0P77V_0C 0
+                            SRAM2RW16x4_PVT_0P77V_0C 0
+                            SRAM2RW16x8_PVT_0P77V_0C 0
+                            SRAM2RW32x16_PVT_0P77V_0C 0
+                            SRAM2RW32x22_PVT_0P77V_0C 0
+                            SRAM2RW32x32_PVT_0P77V_0C 0
+                            SRAM2RW32x33_PVT_0P77V_0C 0
+                            SRAM2RW32x39_PVT_0P77V_0C 0
+                            SRAM2RW32x4_PVT_0P77V_0C 0
+                            SRAM2RW32x8_PVT_0P77V_0C 0
+                            SRAM2RW64x16_PVT_0P77V_0C 0
+                            SRAM2RW64x24_PVT_0P77V_0C 0
+                            SRAM2RW64x32_PVT_0P77V_0C 0
+                            SRAM2RW64x4_PVT_0P77V_0C 0
+                            SRAM2RW64x8_PVT_0P77V_0C 0
+====
+1:85c
+    Interconnect mode:      global
+2:85c
+    Interconnect mode:      spatial
+3:164,165c
+    Operating conditions:   _nominal_ 
+    Interconnect mode:      placement
+====
+1:89,137c
+                                                   Leakage                                            Library 
+            Gate            Instances    Area    Power (nW)                  Library                   Domain 
+  ------------------------------------------------------------------------------------------------------------
+  A2O1A1Ixp33_ASAP7_75t_SL          5      6.998    191.593    asap7sc7p5t_AO_SLVT_SS_nldm_201020           0 
+  AND2x2_ASAP7_75t_R                2      2.799      4.538    asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020        0 
+  AO221x1_ASAP7_75t_R               1      2.333      1.677    asap7sc7p5t_AO_RVT_SS_nldm_201020            0 
+  AOI21xp33_ASAP7_75t_SL            1      1.166     26.591    asap7sc7p5t_AO_SLVT_SS_nldm_201020           0 
+  BUFx24_ASAP7_75t_SL               4     27.994   3571.209    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  BUFx4_ASAP7_75t_SL               32     52.255   5031.328    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  DFFHQNx1_ASAP7_75t_L             36    167.962    821.292    asap7sc7p5t_SEQ_LVT_SS_nldm_201020           0 
+  DFFHQNx1_ASAP7_75t_SL             5     23.328    704.694    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  DFFHQNx1_ASAP7_75t_SRAM           1      4.666      0.751    asap7sc7p5t_SEQ_SRAM_SS_nldm_201020          0 
+  DFFHQx4_ASAP7_75t_L              32    186.624   1462.449    asap7sc7p5t_SEQ_LVT_SS_nldm_201020           0 
+  DHLx1_ASAP7_75t_SL               11     38.491   1267.906    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  DHLx2_ASAP7_75t_SL                2      7.465    267.218    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  DLLx1_ASAP7_75t_SL               33    115.474   3813.749    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  DLLx2_ASAP7_75t_SL                2      7.465    273.801    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  HB1xp67_ASAP7_75t_SRAM            4      3.732      0.738    asap7sc7p5t_INVBUF_SRAM_SS_nldm_201020       0 
+  ICGx1_ASAP7_75t_R                 1      4.199      4.324    asap7sc7p5t_SEQ_RVT_SS_nldm_201020           0 
+  INVx1_ASAP7_75t_L                 1      0.700      4.136    asap7sc7p5t_INVBUF_LVT_SS_nldm_201020        0 
+  INVx1_ASAP7_75t_SL               14      9.798    412.755    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVx2_ASAP7_75t_SL                1      0.933     61.398    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVx3_ASAP7_75t_SL                2      2.333    184.193    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVx4_ASAP7_75t_SL                2      2.799    245.589    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVxp33_ASAP7_75t_SRAM            1      0.700      0.033    asap7sc7p5t_INVBUF_SRAM_SS_nldm_201020       0 
+  INVxp67_ASAP7_75t_SL              9      6.299    168.847    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  NAND2x1_ASAP7_75t_SL              2      2.799     92.578    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NAND2x1p5_ASAP7_75t_SL            1      1.866     72.662    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NAND2x2_ASAP7_75t_SL              1      2.333     92.578    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NAND2xp33_ASAP7_75t_L             3      2.799      3.119    asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020        0 
+  NAND2xp33_ASAP7_75t_SL            6      5.599     80.438    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NAND2xp5_ASAP7_75t_SL            33     30.793    868.520    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NAND3xp33_ASAP7_75t_R             2      2.333      0.621    asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020        0 
+  NAND3xp33_ASAP7_75t_SL            1      1.166      9.642    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NAND5xp2_ASAP7_75t_L              1      1.633      1.946    asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020        0 
+  NOR2xp33_ASAP7_75t_L              2      1.866      7.176    asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020        0 
+  NOR2xp33_ASAP7_75t_SL             9      8.398    184.842    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NOR3x1_ASAP7_75t_SL               1      2.566     46.971    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NOR3x2_ASAP7_75t_SL               1      4.666     93.943    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  OA21x2_ASAP7_75t_R                1      1.633      2.564    asap7sc7p5t_OA_RVT_SS_nldm_201020            0 
+  OA21x2_ASAP7_75t_SL               1      1.633    116.207    asap7sc7p5t_OA_SLVT_SS_nldm_201020           0 
+  OAI211xp5_ASAP7_75t_L             1      1.400      6.179    asap7sc7p5t_OA_LVT_SS_nldm_201020            0 
+  OAI21xp33_ASAP7_75t_SL            1      1.166     39.402    asap7sc7p5t_OA_SLVT_SS_nldm_201020           0 
+  OAI22xp33_ASAP7_75t_SL            1      1.400     35.799    asap7sc7p5t_OA_SLVT_SS_nldm_201020           0 
+  OR2x2_ASAP7_75t_SRAM              4      5.599      1.776    asap7sc7p5t_SIMPLE_SRAM_SS_nldm_201020       0 
+  OR3x1_ASAP7_75t_L                 1      1.400     11.103    asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020        0 
+  SRAM2RW16x32                     18  11757.533      0.000    SRAM2RW16x32_PVT_0P63V_100C                  0 
+  ------------------------------------------------------------------------------------------------------------
+  total                           293  12517.093  20288.875                                           
+2:89,133c
+                                                   Leakage                                            Library 
+            Gate            Instances    Area    Power (nW)                  Library                   Domain 
+  ------------------------------------------------------------------------------------------------------------
+  A2O1A1Ixp33_ASAP7_75t_SL          4      5.599    152.976    asap7sc7p5t_AO_SLVT_SS_nldm_201020           0 
+  AND2x2_ASAP7_75t_R                2      2.799      4.536    asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020        0 
+  AOI21xp33_ASAP7_75t_SL            2      2.333     51.288    asap7sc7p5t_AO_SLVT_SS_nldm_201020           0 
+  BUFx24_ASAP7_75t_SL               4     27.994   3571.209    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  BUFx4_ASAP7_75t_SL               32     52.255   5031.328    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  DFFHQNx1_ASAP7_75t_L             33    153.965    754.747    asap7sc7p5t_SEQ_LVT_SS_nldm_201020           0 
+  DFFHQNx1_ASAP7_75t_SL             8     37.325   1127.931    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  DFFHQx4_ASAP7_75t_L              32    186.624   1462.449    asap7sc7p5t_SEQ_LVT_SS_nldm_201020           0 
+  DFFHQx4_ASAP7_75t_SL              1      5.832    295.444    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  DHLx1_ASAP7_75t_SL               11     38.491   1268.005    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  DHLx2_ASAP7_75t_SL                2      7.465    267.250    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  DLLx1_ASAP7_75t_SL               33    115.474   3813.766    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  DLLx2_ASAP7_75t_SL                2      7.465    273.801    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  HB1xp67_ASAP7_75t_SRAM            4      3.732      0.738    asap7sc7p5t_INVBUF_SRAM_SS_nldm_201020       0 
+  ICGx1_ASAP7_75t_R                 1      4.199      4.324    asap7sc7p5t_SEQ_RVT_SS_nldm_201020           0 
+  INVx1_ASAP7_75t_SL               16     11.197    472.211    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVx2_ASAP7_75t_SL                1      0.933     61.398    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVxp33_ASAP7_75t_SRAM            1      0.700      0.033    asap7sc7p5t_INVBUF_SRAM_SS_nldm_201020       0 
+  INVxp67_ASAP7_75t_SL              8      5.599    155.467    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  NAND2xp33_ASAP7_75t_L             5      4.666      6.462    asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020        0 
+  NAND2xp33_ASAP7_75t_SL            8      7.465    102.037    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NAND2xp5_ASAP7_75t_SL            33     30.793    870.403    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NAND3x1_ASAP7_75t_SL              1      2.566     43.260    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NAND3xp33_ASAP7_75t_R             1      1.166      0.245    asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020        0 
+  NAND3xp33_ASAP7_75t_SL            1      1.166      9.642    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NAND4xp25_ASAP7_75t_R             1      1.400      0.328    asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020        0 
+  NOR2x1_ASAP7_75t_SL               1      1.400     42.958    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NOR2x2_ASAP7_75t_SL               1      2.333    113.490    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NOR2xp33_ASAP7_75t_L              1      0.933      3.618    asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020        0 
+  NOR2xp33_ASAP7_75t_SL            10      9.331    205.344    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NOR3x1_ASAP7_75t_SL               1      2.566     59.184    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NOR3xp33_ASAP7_75t_SRAM           1      1.166      0.199    asap7sc7p5t_SIMPLE_SRAM_SS_nldm_201020       0 
+  O2A1O1Ixp33_ASAP7_75t_SL          1      1.400     44.404    asap7sc7p5t_OA_SLVT_SS_nldm_201020           0 
+  OA21x2_ASAP7_75t_R                1      1.633      2.567    asap7sc7p5t_OA_RVT_SS_nldm_201020            0 
+  OAI211xp5_ASAP7_75t_L             2      2.799     17.007    asap7sc7p5t_OA_LVT_SS_nldm_201020            0 
+  OAI21xp33_ASAP7_75t_SL            1      1.166     39.292    asap7sc7p5t_OA_SLVT_SS_nldm_201020           0 
+  OAI22xp33_ASAP7_75t_SL            1      1.400     35.845    asap7sc7p5t_OA_SLVT_SS_nldm_201020           0 
+  OR2x2_ASAP7_75t_SRAM              4      5.599      1.780    asap7sc7p5t_SIMPLE_SRAM_SS_nldm_201020       0 
+  OR3x1_ASAP7_75t_L                 1      1.400     11.103    asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020        0 
+  SRAM2RW16x32                     18  11757.533      0.000    SRAM2RW16x32_PVT_0P63V_100C                  0 
+  ------------------------------------------------------------------------------------------------------------
+  total                           291  12509.861  20378.070                                           
+3:169,230c
+                                                   Leakage                                             Library 
+            Gate            Instances    Area     Power (nW)                  Library                   Domain 
+  -------------------------------------------------------------------------------------------------------------
+  A2O1A1Ixp33_ASAP7_75t_SL          4      5.599     152.199    asap7sc7p5t_AO_SLVT_SS_nldm_201020           0 
+  AND2x2_ASAP7_75t_R                2      2.799       4.529    asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020        0 
+  AOI21xp33_ASAP7_75t_SL            2      2.333      58.004    asap7sc7p5t_AO_SLVT_SS_nldm_201020           0 
+  BUFx10_ASAP7_75t_SL              11     35.925    4064.709    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  BUFx12f_ASAP7_75t_SL             40    167.962   19703.221    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  BUFx24_ASAP7_75t_SL               4     27.994    3448.850    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  BUFx2_ASAP7_75t_SL               24     27.994    1970.135    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  BUFx3_ASAP7_75t_SL                2      2.799     246.270    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  BUFx4_ASAP7_75t_SL               17     27.760    2443.087    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  BUFx4f_ASAP7_75t_SL              11     20.529    1805.991    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  BUFx5_ASAP7_75t_SL                5      9.331     923.790    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  BUFx6f_ASAP7_75t_SL             142    331.258   34971.265    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  CKINVDCx8_ASAP7_75t_SL            1      5.132     245.614    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  DFFHQNx1_ASAP7_75t_L             33    153.965     743.842    asap7sc7p5t_SEQ_LVT_SS_nldm_201020           0 
+  DFFHQNx1_ASAP7_75t_SL             8     37.325    1117.054    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  DFFHQx4_ASAP7_75t_L              32    186.624    1461.264    asap7sc7p5t_SEQ_LVT_SS_nldm_201020           0 
+  DFFHQx4_ASAP7_75t_SL              1      5.832     291.145    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  DHLx1_ASAP7_75t_SL               13     45.490    1494.371    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  DLLx1_ASAP7_75t_SL               35    122.472    4014.853    asap7sc7p5t_SEQ_SLVT_SS_nldm_201020          0 
+  HB1xp67_ASAP7_75t_L               2      1.866      10.097    asap7sc7p5t_INVBUF_LVT_SS_nldm_201020        0 
+  HB1xp67_ASAP7_75t_SL              2      1.866      64.172    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  ICGx1_ASAP7_75t_R                 1      4.199       4.324    asap7sc7p5t_SEQ_RVT_SS_nldm_201020           0 
+  INVx11_ASAP7_75t_SL              15     45.490    5064.998    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVx13_ASAP7_75t_SL               3     10.498    1197.156    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVx1_ASAP7_75t_SL               16     11.197     487.898    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVx2_ASAP7_75t_SL                5      4.666     306.989    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVx3_ASAP7_75t_SL               12     13.997    1128.661    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVx4_ASAP7_75t_SL               43     60.186    5311.502    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVx5_ASAP7_75t_SL               82    133.903   12586.344    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVx6_ASAP7_75t_SL              156    291.133   28733.563    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVx8_ASAP7_75t_SL               95    221.616   23330.291    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVxp33_ASAP7_75t_SL              3      2.100      32.047    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  INVxp33_ASAP7_75t_SRAM            1      0.700       0.049    asap7sc7p5t_INVBUF_SRAM_SS_nldm_201020       0 
+  INVxp67_ASAP7_75t_SL              7      4.899     135.850    asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       0 
+  NAND2xp33_ASAP7_75t_L             5      4.666       6.631    asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020        0 
+  NAND2xp33_ASAP7_75t_SL            8      7.465     131.096    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NAND2xp5_ASAP7_75t_SL            32     29.860     844.028    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NAND2xp5_ASAP7_75t_SRAM           1      0.933       0.110    asap7sc7p5t_SIMPLE_SRAM_SS_nldm_201020       0 
+  NAND3xp33_ASAP7_75t_L             1      1.166       3.459    asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020        0 
+  NAND3xp33_ASAP7_75t_R             1      1.166       0.234    asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020        0 
+  NAND3xp33_ASAP7_75t_SL            1      1.166      22.116    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NAND4xp25_ASAP7_75t_R             1      1.400       0.398    asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020        0 
+  NOR2xp33_ASAP7_75t_L              1      0.933       2.814    asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020        0 
+  NOR2xp33_ASAP7_75t_SL            10      9.331     209.442    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NOR2xp67_ASAP7_75t_SL             1      1.400      36.075    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  NOR3xp33_ASAP7_75t_SRAM           1      1.166       0.139    asap7sc7p5t_SIMPLE_SRAM_SS_nldm_201020       0 
+  O2A1O1Ixp33_ASAP7_75t_SL          1      1.400      41.010    asap7sc7p5t_OA_SLVT_SS_nldm_201020           0 
+  OA21x2_ASAP7_75t_R                1      1.633       2.569    asap7sc7p5t_OA_RVT_SS_nldm_201020            0 
+  OAI211xp5_ASAP7_75t_L             2      2.799      16.825    asap7sc7p5t_OA_LVT_SS_nldm_201020            0 
+  OAI21xp33_ASAP7_75t_SL            1      1.166      41.008    asap7sc7p5t_OA_SLVT_SS_nldm_201020           0 
+  OAI22xp33_ASAP7_75t_SL            1      1.400      35.097    asap7sc7p5t_OA_SLVT_SS_nldm_201020           0 
+  OR2x2_ASAP7_75t_SL                1      1.400      83.896    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  OR2x2_ASAP7_75t_SRAM              3      4.199       1.070    asap7sc7p5t_SIMPLE_SRAM_SS_nldm_201020       0 
+  OR3x1_ASAP7_75t_L                 1      1.400      10.340    asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020        0 
+  OR3x1_ASAP7_75t_SL                1      1.400      40.523    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  OR3x2_ASAP7_75t_SL                1      1.633      66.282    asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020       0 
+  SRAM2RW16x32                     18  11757.533       0.000    SRAM2RW16x32_PVT_0P63V_100C                  0 
+  -------------------------------------------------------------------------------------------------------------
+  total                           924  13864.052  159149.296                                           
+====
+1:143,159c
+  SRAM2RW16x32_PVT_0P63V_100C                   18         6.1 11757.533      0.000     0.0 
+  asap7sc7p5t_AO_RVT_SS_nldm_201020              1         0.3     2.333      1.677     0.0 
+  asap7sc7p5t_AO_SLVT_SS_nldm_201020             6         2.0     8.165    218.183     1.1 
+  asap7sc7p5t_INVBUF_LVT_SS_nldm_201020          1         0.3     0.700      4.136     0.0 
+  asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020        64        21.8   102.410   9675.319    47.7 
+  asap7sc7p5t_INVBUF_SRAM_SS_nldm_201020         5         1.7     4.432      0.771     0.0 
+  asap7sc7p5t_OA_LVT_SS_nldm_201020              1         0.3     1.400      6.179     0.0 
+  asap7sc7p5t_OA_RVT_SS_nldm_201020              1         0.3     1.633      2.564     0.0 
+  asap7sc7p5t_OA_SLVT_SS_nldm_201020             3         1.0     4.199    191.408     0.9 
+  asap7sc7p5t_SEQ_LVT_SS_nldm_201020            68        23.2   354.586   2283.741    11.3 
+  asap7sc7p5t_SEQ_RVT_SS_nldm_201020             1         0.3     4.199      4.324     0.0 
+  asap7sc7p5t_SEQ_SLVT_SS_nldm_201020           53        18.1   192.223   6327.369    31.2 
+  asap7sc7p5t_SEQ_SRAM_SS_nldm_201020            1         0.3     4.666      0.751     0.0 
+  asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020          7         2.4     7.698     23.344     0.1 
+  asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020          4         1.4     5.132      5.159     0.0 
+  asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020        55        18.8    60.186   1542.172     7.6 
+  asap7sc7p5t_SIMPLE_SRAM_SS_nldm_201020         4         1.4     5.599      1.776     0.0 
+2:139,152c
+  SRAM2RW16x32_PVT_0P63V_100C                   18         6.2 11757.533      0.000     0.0 
+  asap7sc7p5t_AO_SLVT_SS_nldm_201020             6         2.1     7.932    204.264     1.0 
+  asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020        61        21.0    97.978   9291.613    45.6 
+  asap7sc7p5t_INVBUF_SRAM_SS_nldm_201020         5         1.7     4.432      0.771     0.0 
+  asap7sc7p5t_OA_LVT_SS_nldm_201020              2         0.7     2.799     17.007     0.1 
+  asap7sc7p5t_OA_RVT_SS_nldm_201020              1         0.3     1.633      2.567     0.0 
+  asap7sc7p5t_OA_SLVT_SS_nldm_201020             3         1.0     3.966    119.542     0.6 
+  asap7sc7p5t_SEQ_LVT_SS_nldm_201020            65        22.3   340.589   2217.196    10.9 
+  asap7sc7p5t_SEQ_RVT_SS_nldm_201020             1         0.3     4.199      4.324     0.0 
+  asap7sc7p5t_SEQ_SLVT_SS_nldm_201020           57        19.6   212.052   7046.197    34.6 
+  asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020          7         2.4     6.998     21.183     0.1 
+  asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020          4         1.4     5.365      5.108     0.0 
+  asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020        56        19.2    57.620   1446.319     7.1 
+  asap7sc7p5t_SIMPLE_SRAM_SS_nldm_201020         5         1.7     6.765      1.979     0.0 
+3:236,250c
+  SRAM2RW16x32_PVT_0P63V_100C                   18         1.9 11757.533      0.000     0.0 
+  asap7sc7p5t_AO_SLVT_SS_nldm_201020             6         0.6     7.932    210.203     0.1 
+  asap7sc7p5t_INVBUF_LVT_SS_nldm_201020          2         0.2     1.866     10.097     0.0 
+  asap7sc7p5t_INVBUF_SLVT_SS_nldm_201020       696        75.3  1458.233 148202.405    93.1 
+  asap7sc7p5t_INVBUF_SRAM_SS_nldm_201020         1         0.1     0.700      0.049     0.0 
+  asap7sc7p5t_OA_LVT_SS_nldm_201020              2         0.2     2.799     16.825     0.0 
+  asap7sc7p5t_OA_RVT_SS_nldm_201020              1         0.1     1.633      2.569     0.0 
+  asap7sc7p5t_OA_SLVT_SS_nldm_201020             3         0.3     3.966    117.115     0.1 
+  asap7sc7p5t_SEQ_LVT_SS_nldm_201020            65         7.0   340.589   2205.106     1.4 
+  asap7sc7p5t_SEQ_RVT_SS_nldm_201020             1         0.1     4.199      4.324     0.0 
+  asap7sc7p5t_SEQ_SLVT_SS_nldm_201020           57         6.2   211.118   6917.423     4.3 
+  asap7sc7p5t_SIMPLE_LVT_SS_nldm_201020          8         0.9     8.165     23.243     0.0 
+  asap7sc7p5t_SIMPLE_RVT_SS_nldm_201020          4         0.4     5.365      5.161     0.0 
+  asap7sc7p5t_SIMPLE_SLVT_SS_nldm_201020        55         6.0    53.654   1433.456     0.9 
+  asap7sc7p5t_SIMPLE_SRAM_SS_nldm_201020         5         0.5     6.299      1.319     0.0 
+====
+1:164,167c
+  timing_model                        18 11757.533   93.9      0.000     0.0 
+  sequential                         122   551.474    4.4   8611.861    42.4 
+  inverter                            30    23.561    0.2   1076.951     5.3 
+  buffer                              40    83.981    0.7   8603.275    42.4 
+2:157,160c
+  timing_model                        18 11757.533   94.0      0.000     0.0 
+  sequential                         122   552.640    4.4   9263.393    45.5 
+  inverter                            26    18.429    0.1    689.109     3.4 
+  buffer                              40    83.981    0.7   8603.275    42.2 
+3:255,258c
+  timing_model                        18 11757.533   84.8      0.000     0.0 
+  sequential                         122   551.707    4.0   9122.529     5.7 
+  inverter                           439   805.516    5.8  78560.963    49.4 
+  buffer                             260   655.284    4.7  69651.588    43.8 
+====
+1:169c
+  logic                               82    96.345    0.8   1992.463     9.8 
+2:162c
+  logic                               84    93.079    0.7   1817.969     8.9 
+3:260c
+  logic                               84    89.813    0.6   1809.892     1.1 
+====
+1:172c
+  total                              293 12517.093  100.0  20288.875   100.0 
+2:165c
+  total                              291 12509.861  100.0  20378.070   100.0 
+3:263c
+  total                              924 13864.052  100.0 159149.296   100.0 

@@ -3,6 +3,7 @@ mentor.mentor_home: "/tools/mentor"
 mentor.MGLS_LICENSE_FILE: "1717@bwrcflex-1.eecs.berkeley.edu:1717@bwrcflex-2.eecs.berkeley.edu"
 
 cadence.cadence_home: "/tools/cadence"
+cadence.DDI_version: "221_ISR4"
 cadence.CDS_LIC_FILE: "5280@bwrcflex-1.eecs.berkeley.edu:5280@bwrcflex-2.eecs.berkeley.edu"
 
 synopsys.synopsys_home: "/tools/synopsys"

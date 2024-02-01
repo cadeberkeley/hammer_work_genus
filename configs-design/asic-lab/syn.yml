@@ -1,5 +1,9 @@
+cadence.cadence_home: "/tools/cadence"
+cadence.DDI_version: "221_ISR4"
+
+
 # Specify Global Variables
-clockPeriod: &CLK_PERIOD "2.0ns"
+clockPeriod: &CLK_PERIOD "0.6ns"
 clockPeriodby5: &CLK_PERIOD_BY_5 "0.4" # used for pin delays, update accordingly
 verilogSrc: ["src-asic-lab/ALUdec.v",
   "src-asic-lab/ALU.v",
@@ -46,4 +50,5 @@ vlsi.inputs.delays: [
   {name: "mem*", clock: "clk", direction: "input", delay: *CLK_PERIOD_BY_5}
 ]
 
-synthesis.genus.def_file: "asic-lab.def"
+synthesis.genus.def_file: "/tools/scratch/caderichard/hammer_work/asic-lab.def"
+synthesis.genus.phys_flow_effort: "high"
